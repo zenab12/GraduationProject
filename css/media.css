@@ -1,0 +1,787 @@
+    /*extra small screen as moblie*/
+    
+    @media (max-width: 767px) {
+        nav .container {
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 10px 0px 0px;
+        }
+        ul.navLinks,
+        form {
+            display: none
+        }
+        .logo {
+            width: 80%;
+            padding-left: 10px;
+        }
+        .logo a {
+            font-size: 30px;
+            line-height: 50px;
+        }
+        .logo a span {
+            color: #592A20;
+            font-size: 27px;
+            line-height: 50px;
+            padding-left: 5px
+        }
+        .logo a img {
+            padding: 0px 7px 0px 0px;
+            color: #592A20;
+            width: 60px;
+            height: 40px;
+            line-height: 50px
+        }
+        ul.navLinks {
+            width: 100%;
+            order: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #000;
+            text-align: left;
+            align-items: flex-start;
+        }
+        ul.navLinks {
+            display: flex;
+        }
+        ul.navLinks.hidden {
+            display: none
+        }
+        ul.navLinks li {
+            width: 100%;
+            padding-top: 5px;
+            line-height: 50px;
+        }
+        ul.navLinks li.services {
+            position: static;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #FAF5F1;
+        }
+        ul.navLinks li a {
+            padding-left: 10px;
+            font-size: 18px;
+            width: 100%;
+            padding-top: 0px;
+            line-height: 50px;
+        }
+        ul.navLinks li.services i {
+            padding: 10px;
+            line-height: 25px;
+            width: 12%
+        }
+        ul.navLinks li.services a {
+            line-height: 40px;
+            width: 83%;
+            padding-top: 0px;
+        }
+        ul.servicesBox {
+            width: 100%;
+            position: static;
+            display: flex
+        }
+        .navLinks .servicesBox.hidden {
+            display: none;
+        }
+        ul.navLinks li.services ul.servicesBox li a {
+            color: #aaa;
+            padding-left: 0px;
+        }
+        ul.navLinks li.services.active ul.servicesBox li:hover {
+            background: rgba(133, 131, 131, 0.4);
+            color: #707070
+        }
+        ul.navLinks li.services ul.servicesBox li:hover a {
+            color: #707070
+        }
+        ul.navLinks li.active {
+            background: #DC864E
+        }
+        nav .navIcons {
+            width: 20%;
+            margin: 12px 0px 0px
+        }
+        nav .navIcons .Menu {
+            margin-right: 0px;
+            padding: 8px 0px;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+        }
+        nav .navIcons .Menu i {
+            font-size: 17px
+        }
+        a.userIcon {
+            display: none
+        }
+        li.sign {
+            display: flex;
+            padding-bottom: 4px;
+        }
+        footer .links,
+        footer .contactus {
+            width: 100%;
+            order: 2;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px
+        }
+        footer .links h3 {
+            padding-top: 60px
+        }
+        footer .links ul {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer .contactus {
+            width: 100%;
+            order: 3;
+        }
+        footer .contactus a {
+            margin-bottom: 20px;
+        }
+        footer .socialLinks {
+            width: 100%;
+            order: 1;
+        }
+        footer h2,
+        footer h3 {
+            font-size: 18px;
+        }
+        footer h2 {
+            padding-top: 35px;
+        }
+        footer h3 {
+            font-size: 18px;
+        }
+        footer .links .footerLinks li a,
+        footer .contactus a {
+            width: 100%;
+            text-align: center;
+        }
+        footer .links .footerLinks li,
+        footer .contactus a {
+            font-size: 16px;
+            width: 100%
+        }
+        footer .links .footerLinks li {
+            width: 28%;
+            margin-bottom: 15px
+        }
+        footer .links .footerLinks li.sign {
+            width: 50%
+        }
+        .socialLinks ul {
+            width: 80%;
+        }
+        .socialLinks ul li a.icon {
+            font-size: 18px;
+        }
+        footer .copyRight {
+            width: 100%;
+            order: 4;
+            font-size: 16px;
+            padding-left: 10%;
+        }
+    }
+    
+    @media(min-width:500px) and (max-width:660px) {
+        footer h2 {
+            font-size: 21px
+        }
+        footer .links .footerLinks {
+            padding-left: 50px;
+        }
+        footer .links .footerLinks li {
+            width: 32%;
+            margin-bottom: 15px
+        }
+        footer .copyRight {
+            width: 100%;
+            order: 4;
+            font-size: 17px;
+            padding-left: 18%;
+        }
+    }
+    
+    @media(min-width:661px) and (max-width:767px) {
+        footer h2 {
+            font-size: 23px
+        }
+        footer .links .footerLinks {
+            padding-left: 50px;
+        }
+        footer .links .footerLinks li {
+            width: 32%;
+            margin-bottom: 15px
+        }
+        footer .copyRight {
+            width: 100%;
+            order: 4;
+            font-size: 17px;
+            padding-left: 24%;
+        }
+    }
+    
+    @media (max-width:320px) {
+        footer .copyRight {
+            width: 100%;
+            order: 4;
+            font-size: 16px;
+            padding-left: 1%;
+        }
+    }
+    
+    @media (max-width:280px) {
+        footer h2 {
+            font-size: 15px
+        }
+        footer .links .footerLinks li,
+        footer .contactus a {
+            font-size: 14px;
+        }
+        .socialLinks ul li a.icon {
+            width: 39px;
+            height: 39px
+        }
+        footer .copyRight {
+            width: 100%;
+            order: 4;
+            font-size: 14px;
+            padding-left: 0%;
+        }
+    }
+    /*small screen as ipad*/
+    
+    @media (min-width:768px) and (max-width:991px) {
+        nav .container {
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 10px 0px 0px;
+        }
+        ul.navLinks,
+        form {
+            display: flex;
+        }
+        form {
+            width: 50%
+        }
+        .logo {
+            width: 30%;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        .logo a {
+            font-size: 35px;
+            line-height: 55px;
+        }
+        .logo a span {
+            color: #592A20;
+            font-size: 31px;
+            line-height: 60px;
+            padding-left: 5px
+        }
+        .logo a img {
+            padding: 0px 7px 0px 0px;
+            color: #592A20;
+            width: 65px;
+            height: 42px;
+            line-height: 50px
+        }
+        ul.navLinks {
+            width: 100%;
+            order: 3;
+            border-top: 1px solid #707070;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+        }
+        ul.navLinks li {
+            padding-top: 0px;
+            line-height: 60px;
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.navLinks li.sign {
+            display: none;
+        }
+        ul.navLinks li.services {
+            justify-content: flex-start;
+            align-items: baseline;
+            padding-top: 25px
+        }
+        ul.navLinks li a {
+            padding-left: 0px;
+            justify-content: center;
+            font-size: 18px;
+            width: 100%;
+            line-height: 30px;
+            padding-bottom: 15px;
+        }
+        ul.navLinks li.services i {
+            padding: 10px;
+            line-height: 25px;
+            margin-left: -45px;
+        }
+        ul.navLinks li.services>a {
+            line-height: 40px;
+            padding-top: 0px;
+        }
+        ul.servicesBox {
+            width: 100%;
+            top: 83.5px;
+            width: 250px;
+            left: -2px;
+        }
+        nav ul.navLinks ul.servicesBox li {
+            width: 100%;
+            justify-content: flex-start;
+        }
+        ul.servicesBox li a {
+            font-size: 20px;
+            padding: 5px;
+            padding-left: 10px;
+            color: #FAF5F1;
+            justify-content: flex-start;
+        }
+        ul.navLinks .services li:hover {
+            background: #DC864E
+        }
+        nav .navIcons {
+            width: 7%;
+            align-items: center;
+            margin: 10px 10px 10px 0px
+        }
+        nav .navIcons .Menu,
+        a.userIcon {
+            margin-right: 0px;
+            padding: 8px 0px;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            display: none;
+        }
+        a.userIcon i {
+            font-size: 21px
+        }
+        a.userIcon {
+            display: flex
+        }
+        ul.navLinks li.services:hover .servicesBox {
+            display: flex
+        }
+        footer .links,
+        footer .contactus {
+            width: 10%;
+        }
+        footer .links h3 {
+            padding-top: 60px
+        }
+        footer .links ul {
+            width: 100%;
+        }
+        footer .contactus {
+            width: 18%;
+        }
+        footer .socialLinks {
+            width: 70%;
+        }
+        footer h2,
+        footer h3 {
+            font-size: 18px;
+        }
+        footer h2 {
+            padding-top: 35px
+        }
+        footer h3 {
+            font-size: 18px;
+        }
+        footer .links .footerLinks li a,
+        footer .contactus a {
+            width: 100%;
+        }
+        footer .links .footerLinks li,
+        footer .contactus a {
+            font-size: 18px
+        }
+        .socialLinks ul {
+            width: 50%;
+        }
+        .socialLinks ul li a.icon {
+            font-size: 18px;
+        }
+        footer .copyRight {
+            width: 100%;
+            font-size: 18px;
+            padding-left: 23%;
+        }
+        .Sign h2 {
+            padding: 3%;
+            margin-top: 10%;
+            padding-left: 0;
+            width: 85%;
+            margin-left: 7%;
+        }
+        .Sign .signLinks li,
+        .Sign .signLinks a {
+            font-size: 18px;
+            width: 50%;
+            padding: 2%;
+        }
+        .signUp,
+        .signIn {
+            width: 80%;
+            border-radius: 15px;
+        }
+        .sign form {
+            width: 87%;
+            margin-left: 7%;
+        }
+        .Sign input {
+            margin-bottom: 2%;
+            width: 95%;
+            border-radius: 5px;
+            border: 1px solid rgb(209, 209, 209);
+            margin-left: 0%;
+            padding: 2%;
+            margin-left: 4%;
+            padding-left: 6%;
+        }
+        .Sign input::placeholder {
+            padding-left: 0%;
+        }
+        .Sign label {
+            margin: 3% 0%;
+            color: rgb(47, 46, 46);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .Sign button[type="submit"] {
+            background-color: #DC864E;
+            color: #FAF5F1;
+            font-size: 20px;
+            padding: 2%;
+            margin: 30px 0px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .Sign input[type="checkbox"] {
+            margin: 0px;
+            width: 15px;
+            height: 15px;
+        }
+        .Sign input[type="checkbox"]:active,
+        .Sign input[type="checkbox"]:focus,
+        .Sign input[type="checkbox"]:checked {
+            background-color: #DC864E!important
+        }
+        .Sign .submit label {
+            width: 50%;
+            margin-top: 2%;
+            font-size: 16px;
+        }
+        .Sign .submit a {
+            color: #DC864E;
+            margin-top: 2%;
+            font-size: 16px;
+        }
+        .Sign button.icon:first-of-type,
+        .Sign button.icon {
+            height: 37.9px;
+            margin-right: -10%;
+            top: 53.5%;
+            padding: .8%;
+            border-right: 0px;
+        }
+        .Sign .signIn button.icon:nth-of-type(2),
+        .Sign .signUp button.icon:nth-of-type(2) {
+            top: 62.5%;
+        }
+        .Sign .signUp button.icon:nth-of-type(3) {
+            top: 51.6%
+        }
+        .Sign .signUp button.icon:nth-of-type(4) {
+            top: 59.5%;
+        }
+    }
+    /*medium screen as ipadpro*/
+    
+    @media (min-width:992px) and (max-width:1999px) {
+        nav .container {
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 10px 0px 0px;
+        }
+        form {
+            width: 28%;
+            display: flex;
+            padding: 15px 10px;
+            margin-left: 13%;
+        }
+        .logo {
+            width: 10%;
+            padding-left: 10px;
+        }
+        .logo a {
+            font-size: 39px;
+            line-height: 55px;
+        }
+        .logo a span {
+            color: #592A20;
+            font-size: 36px;
+            line-height: 55px;
+            padding-left: 5px
+        }
+        .logo a img {
+            padding: 0px 7px 0px 0px;
+            color: #592A20;
+            width: 65px;
+            height: 45px;
+            line-height: 40px
+        }
+        ul.navLinks {
+            width: 42%;
+        }
+        ul.navLinks li a {
+            font-size: 21px;
+        }
+        ul.navLinks li.services:hover .servicesBox {
+            display: flex
+        }
+        ul.navLinks .servicesBox li:hover {
+            background: #DC864E
+        }
+        nav .navIcons {
+            width: 4%;
+            margin: 16px 10px 0px
+        }
+        nav .navIcons .userIcon {
+            margin-right: 0px;
+            padding: 8px 0px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+        }
+        nav .navIcons .userIcon i {
+            font-size: 19px
+        }
+        a.Menu {
+            display: none
+        }
+        li.sign {
+            display: none;
+        }
+        footer .links,
+        footer .contactus {
+            width: 10%;
+        }
+        footer .links h3 {
+            padding-top: 60px
+        }
+        footer .links ul {
+            width: 100%;
+        }
+        footer .contactus {
+            width: 18%;
+        }
+        footer .socialLinks {
+            width: 65%;
+        }
+        footer h2,
+        footer h3 {
+            font-size: 25px;
+        }
+        footer h2 {
+            padding-top: 35px
+        }
+        footer h3 {
+            font-size: 20px;
+        }
+        footer .links .footerLinks li a,
+        footer .contactus a {
+            width: 100%;
+        }
+        footer .links .footerLinks li,
+        footer .contactus a {
+            font-size: 20px
+        }
+        .socialLinks ul {
+            width: 40%;
+        }
+        .socialLinks ul li a.icon {
+            font-size: 18px;
+        }
+        footer .copyRight {
+            width: 100%;
+            font-size: 21px;
+            padding-left: 28%;
+        }
+        .Sign h2 {
+            padding: 3%;
+            margin-top: 10%;
+            padding-left: 0;
+            width: 85%;
+            margin-left: 7%;
+        }
+        .Sign .signLinks li,
+        .Sign .signLinks a {
+            font-size: 18px;
+            width: 50%;
+            padding: 2%;
+        }
+        .signUp,
+        .signIn {
+            width: 80%;
+            border-radius: 15px;
+        }
+        .sign form {
+            width: 87%;
+            margin-left: 7%;
+        }
+        .Sign input {
+            margin-bottom: 2%;
+            width: 90%;
+            border-radius: 5px;
+            border: 1px solid rgb(209, 209, 209);
+            margin-left: 0%;
+            padding: 2%;
+            margin-left: 8%;
+            padding-left: 6%;
+        }
+        .Sign input::placeholder {
+            padding-left: 0%;
+        }
+        .Sign label {
+            margin: 3% 0%;
+            color: rgb(47, 46, 46);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .Sign button[type="submit"] {
+            background-color: #DC864E;
+            color: #FAF5F1;
+            font-size: 20px;
+            padding: 2%;
+            margin: 30px 0px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .Sign input[type="checkbox"] {
+            margin: 0px;
+            width: 15px;
+            height: 15px;
+        }
+        .Sign input[type="checkbox"]:active,
+        .Sign input[type="checkbox"]:focus,
+        .Sign input[type="checkbox"]:checked {
+            background-color: #DC864E!important
+        }
+        .Sign .submit label {
+            width: 50%;
+            margin-top: 2%;
+            font-size: 16px;
+        }
+        .Sign .submit a {
+            color: #DC864E;
+            margin-top: 2%;
+            font-size: 16px;
+        }
+        .Sign button.icon:first-of-type,
+        .Sign button.icon {
+            height: 43.6px;
+            margin-right: -10%;
+            top: 35.95%;
+            padding: .8%;
+            border-right: 0px;
+        }
+        .Sign .signIn button.icon:nth-of-type(2),
+        .Sign .signUp button.icon:nth-of-type(2) {
+            top: 43.8%;
+        }
+        .Sign .signUp button.icon:nth-of-type(3) {
+            top: 51.6%
+        }
+        .Sign .signUp button.icon:nth-of-type(4) {
+            top: 59.5%;
+        }
+    }
+    /*large screen as laptop*/
+    
+    @media(min-width:1200px) {
+        form {
+            width: 28%;
+            display: flex;
+            padding: 15px 10px 15px 0px;
+            margin-left: 5%;
+        }
+        ul.navLinks li.services:hover .servicesBox {
+            display: flex
+        }
+        ul.navLinks {
+            width: 38%
+        }
+        ul.navLinks li a {
+            text-align: center;
+        }
+        form {
+            margin-left: 10%
+        }
+        .logo {
+            width: 8%
+        }
+        ul.navLinks .servicesBox li:hover {
+            background: #DC864E
+        }
+        footer .copyRight {
+            width: 100%;
+            font-size: 25px;
+            padding-left: 30%;
+        }
+        .signUp,
+        .signIn {
+            width: 50%;
+            height: auto;
+            background-color: #FAF5F1;
+            border: 1px solid #707070;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .Sign button.icon:first-of-type,
+        .Sign button.icon {
+            background: #DC864E;
+            height: 30px;
+            width: 5%;
+            height: auto;
+            z-index: 999999;
+            top: 66.3%;
+            position: absolute;
+            outline: none;
+            ;
+            border: none;
+            text-align: center;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid #DC864E;
+            padding: .8%;
+            border-right: 0px;
+        }
+        .Sign .signIn button.icon:nth-of-type(2),
+        .Sign .signUp button.icon:nth-of-type(2) {
+            top: 80.6%;
+        }
+        .Sign .signUp button.icon:nth-of-type(3) {
+            top: 94.9%
+        }
+        .Sign .signUp button.icon:nth-of-type(4) {
+            top: 109.2%;
+        }
+    }
