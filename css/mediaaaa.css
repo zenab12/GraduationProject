@@ -7,7 +7,7 @@
             padding: 10px 0px 0px;
         }
         ul.navLinks,
-        form {
+        nav form {
             display: none
         }
         .logo {
@@ -16,20 +16,16 @@
         }
         .logo a {
             font-size: 30px;
-            line-height: 50px;
         }
         .logo a span {
-            color: #592A20;
             font-size: 27px;
-            line-height: 50px;
             padding-left: 5px
         }
         .logo a img {
             padding: 0px 7px 0px 0px;
-            color: #592A20;
             width: 60px;
             height: 40px;
-            line-height: 50px
+        margin-top:2px
         }
         ul.navLinks {
             width: 100%;
@@ -83,7 +79,6 @@
             display: none;
         }
         ul.navLinks li.services ul.servicesBox li a {
-            color: #aaa;
             padding-left: 0px;
         }
         ul.navLinks li.services.active ul.servicesBox li:hover {
@@ -98,7 +93,7 @@
         }
         nav .navIcons {
             width: 20%;
-            margin: 12px 0px 0px
+            margin: 9px 0px 0px
         }
         nav .navIcons .Menu {
             margin-right: 0px;
@@ -186,6 +181,62 @@
             font-size: 16px;
             padding-left: 10%;
         }
+        .Sign .submit label {
+            font-size: 15px;
+        }
+        .Sign .container {
+            width: 95%;
+        }
+        .Sign h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .signIn,
+        .signUp {
+            width: 95%
+        }
+     
+        .Sign form {
+            width: 86%;
+        }
+        .Sign .submit {
+            margin-top: 3%
+        }
+        .Sign .submit label {
+            width: 100%;
+            font-size: 15px;
+        }
+        .Sign .submit a {
+            width: 100%;
+            text-align: left;
+            font-size: 15px;
+            padding-left: 10px;
+            margin-top: 20px
+        }
+        .Sign button.icon:first-of-type {
+   
+            padding-left: 1.4%
+        }
+        .Sign button.icon {
+            width: 11%;
+            border-radius: 5px 0px 0px 5px;
+            margin-right: -6px;
+        }
+
+                    .Sign form .continput {
+     
+height:30px    }
+
+
+    .Sign form .continput button.icon {
+        width:15%;
+    }
+
+
+        .Sign form .continput input {
+        width:84%;
+    }
+        
     }
     
     @media(min-width:500px) and (max-width:660px) {
@@ -205,6 +256,20 @@
             font-size: 17px;
             padding-left: 18%;
         }
+
+
+
+        .Sign .submit label {
+            width: 50%;
+        }
+        .Sign .submit a {
+            width: 50%;
+            text-align: right;
+            padding-left: 0px;
+            margin-top: 10px
+        }
+
+
     }
     
     @media(min-width:661px) and (max-width:767px) {
@@ -223,6 +288,16 @@
             order: 4;
             font-size: 17px;
             padding-left: 24%;
+        }
+  
+        .Sign .submit label {
+            width: 50%;
+        }
+        .Sign .submit a {
+            width: 50%;
+            text-align: right;
+            padding-left: 0px;
+            margin-top: 10px
         }
     }
     
@@ -253,6 +328,7 @@
             font-size: 14px;
             padding-left: 0%;
         }
+ 
     }
     /*small screen as ipad*/
     
@@ -263,30 +339,25 @@
             padding: 10px 0px 0px;
         }
         ul.navLinks,
-        form {
+        nav form {
             display: flex;
         }
-        form {
+        nav form {
             width: 50%
         }
         .logo {
             width: 30%;
             padding-left: 10px;
-            padding-top: 5px;
         }
         .logo a {
             font-size: 35px;
-            line-height: 55px;
         }
         .logo a span {
-            color: #592A20;
             font-size: 31px;
-            line-height: 60px;
             padding-left: 5px
         }
         .logo a img {
             padding: 0px 7px 0px 0px;
-            color: #592A20;
             width: 65px;
             height: 42px;
             line-height: 50px
@@ -357,7 +428,7 @@
         nav .navIcons {
             width: 7%;
             align-items: center;
-            margin: 10px 10px 10px 0px
+            margin: 0px 10px 10px 0px
         }
         nav .navIcons .Menu,
         a.userIcon {
@@ -423,94 +494,52 @@
             font-size: 18px;
             padding-left: 23%;
         }
-        .Sign h2 {
-            padding: 3%;
-            margin-top: 10%;
+        .Sign .submit label {
+            width: 26%;
+            margin: 0;
+            margin-top: 2%;
+            cursor: pointer;
             padding-left: 0;
-            width: 85%;
-            margin-left: 7%;
+            font-size: 17px;
+        }
+        .Sign .container {
+            width: 90%;
+            margin: auto auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 150px;
+            padding-bottom: 10%;
+        }
+        .signIn,
+        .signUp {
+            width: 70%
         }
         .Sign .signLinks li,
         .Sign .signLinks a {
             font-size: 18px;
-            width: 50%;
             padding: 2%;
         }
-        .signUp,
-        .signIn {
-            width: 80%;
-            border-radius: 15px;
+  
+        .Sign form {
+            width: 86%;
         }
-        .sign form {
-            width: 87%;
-            margin-left: 7%;
+
+        .Sign .submit {
+            margin-top: 3%
         }
-        .Sign input {
-            margin-bottom: 2%;
-            width: 95%;
-            border-radius: 5px;
-            border: 1px solid rgb(209, 209, 209);
-            margin-left: 0%;
-            padding: 2%;
-            margin-left: 4%;
-            padding-left: 6%;
-        }
-        .Sign input::placeholder {
-            padding-left: 0%;
-        }
-        .Sign label {
-            margin: 3% 0%;
-            color: rgb(47, 46, 46);
-            font-size: 15px;
-            font-weight: bold;
-        }
-        .Sign button[type="submit"] {
-            background-color: #DC864E;
-            color: #FAF5F1;
-            font-size: 20px;
-            padding: 2%;
-            margin: 30px 0px;
-            border-radius: 5px;
-            width: 100%;
-        }
-        .Sign input[type="checkbox"] {
-            margin: 0px;
-            width: 15px;
-            height: 15px;
-        }
-        .Sign input[type="checkbox"]:active,
-        .Sign input[type="checkbox"]:focus,
-        .Sign input[type="checkbox"]:checked {
-            background-color: #DC864E!important
-        }
+
         .Sign .submit label {
             width: 50%;
-            margin-top: 2%;
-            font-size: 16px;
+            font-size: 17px;
         }
         .Sign .submit a {
-            color: #DC864E;
-            margin-top: 2%;
-            font-size: 16px;
+            width: 50%;
+            text-align: right;
+            padding-right: 10px
         }
-        .Sign button.icon:first-of-type,
-        .Sign button.icon {
-            height: 37.9px;
-            margin-right: -10%;
-            top: 53.5%;
-            padding: .8%;
-            border-right: 0px;
-        }
-        .Sign .signIn button.icon:nth-of-type(2),
-        .Sign .signUp button.icon:nth-of-type(2) {
-            top: 62.5%;
-        }
-        .Sign .signUp button.icon:nth-of-type(3) {
-            top: 51.6%
-        }
-        .Sign .signUp button.icon:nth-of-type(4) {
-            top: 59.5%;
-        }
+ 
     }
     /*medium screen as ipadpro*/
     
@@ -520,7 +549,7 @@
             width: 100%;
             padding: 10px 0px 0px;
         }
-        form {
+        nav form {
             width: 28%;
             display: flex;
             padding: 15px 10px;
@@ -532,17 +561,12 @@
         }
         .logo a {
             font-size: 39px;
-            line-height: 55px;
         }
         .logo a span {
-            color: #592A20;
             font-size: 36px;
-            line-height: 55px;
-            padding-left: 5px
         }
         .logo a img {
             padding: 0px 7px 0px 0px;
-            color: #592A20;
             width: 65px;
             height: 45px;
             line-height: 40px
@@ -624,99 +648,53 @@
             font-size: 21px;
             padding-left: 28%;
         }
-        .Sign h2 {
-            padding: 3%;
-            margin-top: 10%;
+        .Sign .submit label {
+            width: 26%;
+            margin: 0;
+            margin-top: 2%;
+            cursor: pointer;
             padding-left: 0;
+            font-size: 17px;
+        }
+        .Sign .container {
             width: 85%;
+            margin: auto auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 150px;
+            padding-bottom: 10%;
+        }
+        .Sign h2 {
+            padding: 0%;
+            padding-bottom: 3%;
+            width: 84%;
+        }
+        .signIn,
+        .signUp {
+            width: 60%
+        }
+  
+        .Sign form {
             margin-left: 7%;
-        }
-        .Sign .signLinks li,
-        .Sign .signLinks a {
-            font-size: 18px;
-            width: 50%;
-            padding: 2%;
-        }
-        .signUp,
-        .signIn {
-            width: 80%;
-            border-radius: 15px;
-        }
-        .sign form {
-            width: 87%;
-            margin-left: 7%;
-        }
-        .Sign input {
-            margin-bottom: 2%;
-            width: 90%;
-            border-radius: 5px;
-            border: 1px solid rgb(209, 209, 209);
-            margin-left: 0%;
-            padding: 2%;
-            margin-left: 8%;
-            padding-left: 6%;
-        }
-        .Sign input::placeholder {
-            padding-left: 0%;
-        }
-        .Sign label {
-            margin: 3% 0%;
-            color: rgb(47, 46, 46);
-            font-size: 15px;
-            font-weight: bold;
-        }
-        .Sign button[type="submit"] {
-            background-color: #DC864E;
-            color: #FAF5F1;
-            font-size: 20px;
-            padding: 2%;
-            margin: 30px 0px;
-            border-radius: 5px;
-            width: 100%;
-        }
-        .Sign input[type="checkbox"] {
-            margin: 0px;
-            width: 15px;
-            height: 15px;
-        }
-        .Sign input[type="checkbox"]:active,
-        .Sign input[type="checkbox"]:focus,
-        .Sign input[type="checkbox"]:checked {
-            background-color: #DC864E!important
+            width: 86%;
         }
         .Sign .submit label {
             width: 50%;
-            margin-top: 2%;
-            font-size: 16px;
+            font-size: 17px;
         }
         .Sign .submit a {
-            color: #DC864E;
-            margin-top: 2%;
-            font-size: 16px;
+            width: 50%;
+            text-align: right;
+            padding-right: 10px
         }
-        .Sign button.icon:first-of-type,
-        .Sign button.icon {
-            height: 43.6px;
-            margin-right: -10%;
-            top: 35.95%;
-            padding: .8%;
-            border-right: 0px;
-        }
-        .Sign .signIn button.icon:nth-of-type(2),
-        .Sign .signUp button.icon:nth-of-type(2) {
-            top: 43.8%;
-        }
-        .Sign .signUp button.icon:nth-of-type(3) {
-            top: 51.6%
-        }
-        .Sign .signUp button.icon:nth-of-type(4) {
-            top: 59.5%;
-        }
+ 
     }
     /*large screen as laptop*/
     
     @media(min-width:1200px) {
-        form {
+        nav form {
             width: 28%;
             display: flex;
             padding: 15px 10px 15px 0px;
@@ -731,12 +709,13 @@
         ul.navLinks li a {
             text-align: center;
         }
-        form {
+        nav form {
             margin-left: 10%
         }
         .logo {
             width: 8%
         }
+        
         ul.navLinks .servicesBox li:hover {
             background: #DC864E
         }
@@ -745,43 +724,51 @@
             font-size: 25px;
             padding-left: 30%;
         }
-        .signUp,
-        .signIn {
-            width: 50%;
-            height: auto;
-            background-color: #FAF5F1;
-            border: 1px solid #707070;
-            border-radius: 15px;
+        .Sign .submit label {
+            width: 26%;
+            margin: 0;
+            margin-top: 2%;
+            cursor: pointer;
+            padding-left: 0;
+            font-size: 17px;
+        }
+        .Sign .container {
+            width: 85%;
+            margin: auto auto;
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 150px;
+            padding-bottom: 10%;
         }
-        .Sign button.icon:first-of-type,
-        .Sign button.icon {
-            background: #DC864E;
-            height: 30px;
-            width: 5%;
-            height: auto;
-            z-index: 999999;
-            top: 66.3%;
-            position: absolute;
-            outline: none;
-            ;
-            border: none;
-            text-align: center;
-            border-radius: 5px 0px 0px 5px;
-            border: 1px solid #DC864E;
-            padding: .8%;
-            border-right: 0px;
+        .Sign h2 {
+            padding: 0%;
+            padding-bottom: 3%;
+            width: 84%;
+            margin-left: 7%;
         }
-        .Sign .signIn button.icon:nth-of-type(2),
-        .Sign .signUp button.icon:nth-of-type(2) {
-            top: 80.6%;
+        .signIn,
+        .signUp {
+            width: 50%
         }
-        .Sign .signUp button.icon:nth-of-type(3) {
-            top: 94.9%
+        .Sign .signLinks li,
+        .Sign .signLinks a {
+            font-size: 22px;
+            padding: 2%;
         }
-        .Sign .signUp button.icon:nth-of-type(4) {
-            top: 109.2%;
+
+        .Sign form {
+            width: 86%;
         }
+        .Sign .submit label {
+            width: 50%;
+            font-size: 17px;
+        }
+        .Sign .submit a {
+            width: 50%;
+            text-align: right;
+            padding-right: 10px;
+        }
+ 
     }

@@ -347,7 +347,8 @@
     }
     
     body {
-        font-family: 'Oxygen', Sans-Serif;
+     
+font-family: 'Kaushan Script', cursive;
     }
     
     nav {
@@ -355,14 +356,35 @@
         background: #DC864E;
         border: 1px solid #707070;
         /*background: linear-gradient(45deg, #DC864E, #ab734e);*/
-        font-family: 'Oxygen', Sans-Serif;
+      
     }
     
+        nav .container ,
+            nav form ,
+             ul.navLinks,
+    ul.servicesBox ,
+        ul.navLinks li.services ,
+            nav .navIcons ,
+                footer .container ,
+                    .socialLinks ul ,
+                        .Sign .container ,
+                            .Sign .signLinks ,
+                                .sign form ,
+                                    .Sign .submit,
+    .Sign button[type="submit"] ,
+        .Sign form .continput 
+            {
+
+  display: flex;
+        flex-direction: row;
+
+            }
+
+
+
     nav .container {
         width: 100%;
         padding: 0px 20px;
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
     
@@ -377,15 +399,20 @@
     
     .logo {
         width: 20%;
+        margin-top:-10px;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Kaushan Script', cursive;
     }
     
     .logo a {
-        color: #FAF5F1;
-        font-size: 45px;
+        color: #592A20;
+        font-size: 40px;
         width: 100%;
         padding: 10px 0px;
         font-weight: bolder;
         display: inline-flex;
+                margin-top:10px
+
     }
     
     .logo a img {
@@ -393,22 +420,21 @@
         color: #592A20;
         width: 70px;
         height: 50px;
-        line-height: 60px
+        margin-top:5px
     }
     
     .logo a span {
-        color: #592A20;
-        font-size: 40px;
+        color: #FAFAFA;
+        font-size: 60px;
         line-height: 59px;
-        padding-left: 5px
+        padding-left: 0px
     }
     
-    form {
+    nav form {
         width: 30%;
-        display: flex;
-        flex-direction: row;
         padding: 20px 0px;
         margin-left: 0%;
+        margin-bottom:5px
     }
     
     form input[type="search"] {
@@ -418,11 +444,10 @@
         font-size: 22px;
         width: 90%;
         outline: none;
-        padding: 2px;
+        padding: 5px;
         border: none;
         padding-left: 10px;
         line-height: 30px;
-        padding-bottom: 0px;
         font-weight: 100;
     }
     
@@ -430,8 +455,9 @@
         color: #592A20;
         font-size: 22px;
         padding-left: 10px;
-        line-height: 100px;
         font-weight: 100;
+        padding-bottom:20px;
+        vertical-align:middle
     }
     
     nav form button {
@@ -449,8 +475,6 @@
     ul.navLinks,
     ul.servicesBox {
         width: 40%;
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
         list-style: none;
     }
@@ -463,6 +487,10 @@
         position: relative;
         z-index: 1;
     }
+
+      ul.navLinks{
+          margin-top:-2px
+      }
     
     ul.servicesBox {
         position: absolute;
@@ -507,9 +535,7 @@
     }
     
     ul.navLinks li.services {
-        display: flex;
         justify-content: space-between;
-        flex-direction: row;
         cursor: pointer;
     }
     
@@ -526,8 +552,6 @@
     
     nav .navIcons {
         width: 4%;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
         margin: 20px 0px 0px
     }
@@ -563,8 +587,6 @@
     footer .container {
         width: 85%;
         margin: auto auto;
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -639,8 +661,6 @@
     
     .socialLinks ul {
         width: 35%;
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
         position: relative;
         margin-top: 40px;
@@ -687,15 +707,16 @@
     }
     
     .socialLinks ul li a.icon {
-        border: 2px solid #FAF5F1;
-        color: #DC864E
-    }
-    
-    .socialLinks ul li:hover a.icon {
         color: #592A20;
         border: 4px double #DC864E;
         ;
         background: #FAF5F1
+    }
+    
+    .socialLinks ul li:hover a.icon {
+        color: #fff;
+        border: 4px double #FAFAFA;
+        background-color: #DC864E;
     }
     
     footer .copyRight {
@@ -711,8 +732,6 @@
     .Sign .container {
         width: 85%;
         margin: auto auto;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-top: 150px;
@@ -738,15 +757,13 @@
     .Sign .signLinks {
         width: 100%;
         margin-left: 0;
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         text-align: center;
         margin-bottom: 0px;
         padding-left: 0;
         background-color: #FAF5F1;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 15px 15px 0px 0px;
     }
     
     .Sign .signLinks li,
@@ -754,20 +771,22 @@
         color: #DC864E;
         font-size: 18px;
         width: 50%;
-        border-radius: 0px ​10px 0px 0px;
+        border-radius: 0px ​15px 0px 0px;
         font-weight: bold;
         padding: 2%;
         transition: background-color .5s ease-in-out;
         list-style-type: none;
-        cursor: pointer
+        cursor: pointer;
+         background-color: #DC864E;
+        color: #FAF5F1;
     }
     
     .Sign .signLinks li:first-of-type {
-        border-radius: 10px 0px 0px 0px;
+        border-radius: 15px 0px 0px 0px;
     }
     
     .Sign .signLinks li:last-of-type {
-        border-radius: 0px 10px 0px 0px;
+        border-radius: 0px 15px 0px 0px;
     }
     
     .Sign .signLinks a {
@@ -779,11 +798,23 @@
     color: #FAF5F1;
 }
 */
-    
-    .Sign .signLinks li.active {
-        background-color: #DC864E;
+        .Sign .signLinks li{
+   background-color: #DC864E;
         color: #FAF5F1;
+        }
+
+    .Sign .signLinks li.active {
+               color: #DC864E;
+               background:#faf5f1
+
+
     }
+
+    .Sign .signLinks li.active {
+  transition:all 1px ease-in-out
+    }
+
+
     
     .signUp,
     .signIn {
@@ -797,29 +828,43 @@
         flex-wrap: wrap;
     }
     
-    .sign form {
-        display: flex;
-        flex-direction: column;
+    .Sign form {
+ 
         flex-wrap: wrap;
-        width: 87%;
+        width: 90%;
         margin-left: 7%;
     }
+
+
+    .Sign form .continput {
+        width:100%;
+        justify-content:flex-start;
+        height:36px;
+        overflow:hidden;
+        margin-bottom:10px
+    }
+
+    .Sign form .continput button.icon {
+        width:10%;
+        padding:0;
+        margin:0;
+        height:100%
+    }
+
+        .Sign form .continput input {
+        width:89%;
     
-    .Sign input {
-        margin-bottom: 2%;
-        width: 90%;
-        border-radius: 5px;
+        border-radius: 0px 5px 5px 0px;
         border: 1px solid rgb(209, 209, 209);
         margin-left: 0%;
-        padding: 2%;
         outline: none;
         border: 1px solid #DC864E;
-        position: relative;
-        z-index: 9999;
         display: inline-block;
-        margin-left: 10%;
-        padding-left: 6%;
-        color: #DC864E
+        color: #DC864E;
+        border-left: 0px;
+        padding-left:5px;
+                width:89%;
+
     }
     
     .Sign input::placeholder {
@@ -829,17 +874,19 @@
     .Sign label {
         margin: 3% 0%;
         color: rgb(47, 46, 46);
+        width: 100%;
         font-size: 15px;
+        display: inline-block;
         font-weight: bold;
     }
-    
-    .Sign label span {
-        color: red;
+
+       .Sign label span {
+   color:#DC864E
     }
     
     .Sign .submit {
-        display: flex;
-        flex-direction: row;
+
+        margin-top:20px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -853,32 +900,26 @@
         border-radius: 5px;
         outline: none;
         border: none;
-        display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
+        cursor: pointer;
+        border:1px solid #FAFAFA;
+        transition:all 1s ease-in-out
     }
-    
-    .Sign input[type="checkbox"] {
-        margin: 0px;
-        width: 15px;
-        background-color: #DC864E!important;
-        height: 15px;
-    }
-    
-    .Sign input[type="checkbox"]:active,
-    .Sign input[type="checkbox"]:focus,
-    .Sign input[type="checkbox"]:checked {
-        background-color: #DC864E!important
-    }
+
+        .Sign button[type="submit"]:hover {
+            background:#592A20;
+            color:#FAFAFA;
+            border:1px solid #DC864E
+        }
     
     .Sign .submit label {
-        width: 50%;
+        width: 26%;
         margin: 0;
         margin-top: 2%;
         cursor: pointer;
         padding-left: 0;
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .Sign .submit a {
@@ -889,37 +930,19 @@
         font-size: 16px;
         font-weight: bold;
     }
+
     
-    .Sign button.icon:first-of-type,
+    
     .Sign button.icon {
         background: #DC864E;
-        height: 30px;
-        width: 5%;
+        width: 6%;
         height: auto;
-        z-index: 999999;
-        top: 66.3%;
-        position: absolute;
         outline: none;
-        ;
         border: none;
         text-align: center;
         border-radius: 5px 0px 0px 5px;
         border: 1px solid #DC864E;
-        padding: .8%;
         border-right: 0px;
-    }
-    
-    .Sign .signIn button.icon:nth-of-type(2),
-    .Sign .signUp button.icon:nth-of-type(2) {
-        top: 80.6%;
-    }
-    
-    .Sign .signUp button.icon:nth-of-type(3) {
-        top: 94.9%
-    }
-    
-    .Sign .signUp button.icon:nth-of-type(4) {
-        top: 109.2%;
     }
     
     .Sign button.icon i {
@@ -929,3 +952,45 @@
     .Sign .hiden {
         display: none;
     }
+    
+    .Sign input[type="checkbox"] {
+        -webkit-appearance: initial;
+        appearance: initial;
+        margin: 0px;
+        margin-left: 5px;
+        border: 1px solid #d5d3d3;
+        background: rgb(226, 223, 223);
+        width: 10px;
+        height: 5px;
+        background: rgb(248, 246, 246);
+        position: relative;
+        padding: 6.5px;
+        border-radius: 3px;
+    }
+    
+    input[type="checkbox"]:checked {
+        background: #DC864E;
+    }
+    
+    input[type="checkbox"]:checked:after {
+        content: "\2713";
+        color: #fff;
+        position: absolute;
+        font-size: 12px;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /*
+         * If you want to fully change the check appearance, use the following:
+         * content: " ";
+         * width: 100%;
+         * height: 100%;
+         * background: blue;
+         * top: 0;
+         * left: 0;
+         */
+    }
+    
