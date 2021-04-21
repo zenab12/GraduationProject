@@ -46,5 +46,11 @@ $(document).ready(function() {
          $($(this).data('class')).addClass('active').siblings().removeClass('active');
 
         $("." + $(this).data('class')).removeClass('hiden').siblings().addClass('hiden');
-    })
+
+     
+    });
+
+
+
+
 });
