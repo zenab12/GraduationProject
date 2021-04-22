@@ -12,12 +12,12 @@ $(document).ready(function() {
         $(this).parent().find($('.servicesBox')).toggleClass('hidden');
     });
 
-  $('li.services .fa-caret-down').on('click', function() {
+    $('li.services .fa-caret-down').on('click', function() {
 
 
         $(this).parent().find($('.servicesBox')).toggleClass('hidden');
     });
-    
+
 
     if ($('body').width() <= 768) {
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
         })
 
 
-              $('.navLinks > li .fa-caret-down').on('click', function() {
+        $('.navLinks > li .fa-caret-down').on('click', function() {
 
             $(this).parent().addClass('active').siblings().removeClass('active');
             $(this).parent().addClass('active').siblings().find($('.servicesBox li')).removeClass('active').parent().addClass('hidden')
@@ -43,14 +43,29 @@ $(document).ready(function() {
 
     $('.Sign .signLinks li').on('click', function() {
 
-         $($(this).data('class')).addClass('active').siblings().removeClass('active');
+        $($(this).data('class')).addClass('active').siblings().removeClass('active');
 
         $("." + $(this).data('class')).removeClass('hiden').siblings().addClass('hiden');
 
-     
+
     });
 
 
+    $(window).on('load', function() {
+
+        if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signin") {
+
+            window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signin";
+            $("#signin").removeClass('hiden').siblings().addClass('hiden');
+
+
+        } else if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup") {
+
+            window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup"
+            $("#signup").removeClass('hiden').siblings().addClass('hiden');
+        }
+
+    });
 
 
 });
