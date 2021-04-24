@@ -878,7 +878,7 @@
                                     }
                                     .bookShelf .container .books .book {
                                         display: flex;
-                                        width: 280px
+                                        width: 220px
                                     }
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 45px;
