@@ -264,8 +264,6 @@ a {
     padding-left: 0
 }
 
-
-
 nav form {
     width: 30%;
     padding: 20px 0;
@@ -600,7 +598,6 @@ footer .copyRight {
     border-radius: 15px 15px 0 0
 }
 
-
 .Sign .signLinks a,
 .Sign .signLinks li {
     color: #dc864e;
@@ -617,12 +614,12 @@ footer .copyRight {
 }
 
 .Sign .signLinks li:first-of-type,
-.Sign .signLinks li:first-of-type a  {
+.Sign .signLinks li:first-of-type a {
     border-radius: 15px 0 0 0
 }
 
 .Sign .signLinks li:last-of-type,
-.Sign .signLinks li:last-of-type a  {
+.Sign .signLinks li:last-of-type a {
     border-radius: 0 15px 0 0
 }
 
@@ -630,15 +627,14 @@ footer .copyRight {
     border-radius: 0
 }
 
-.Sign .signLinks li ,
+.Sign .signLinks li,
 .Sign .signLinks li a {
     background-color: #dc864e;
     color: #faf5f1;
-        padding: 0%;
-
+    padding: 0%;
 }
 
-.Sign .signLinks li.active a{
+.Sign .signLinks li.active a {
     color: #dc864e;
     background: #faf5f1
 }
@@ -648,17 +644,11 @@ footer .copyRight {
 }
 
 .Sign .signLinks li a {
-    width:100%;
-    display:inline-block;
-    padding:6%
-    ;
-     border-radius: 0px 15px 0px 0px;
-
+    width: 100%;
+    display: inline-block;
+    padding: 6%;
+    border-radius: 0px 15px 0px 0px;
 }
-
-
-
-
 
 .signIn,
 .signUp {
@@ -681,8 +671,8 @@ footer .copyRight {
 .Sign form .continput {
     width: 100%;
     margin: 10px 0px;
-    height:40px;
-    overflow:hidden
+    height: 40px;
+    overflow: hidden
 }
 
 .Sign form .continput button.icon {
@@ -721,11 +711,8 @@ footer .copyRight {
 
 .Sign label span {
     color: #dc864e;
-    margin-left:5px
+    margin-left: 5px
 }
-
-
-
 
 .Sign .submit {
     margin-top: 20px;
@@ -748,8 +735,6 @@ footer .copyRight {
     border: 1px solid #fafafa;
     transition: all 1s ease-in-out
 }
-
-
 
 .Sign button[type=submit]:hover {
     background: #592a20;
@@ -825,4 +810,172 @@ input[type=checkbox]:checked:after {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
+}
+
+
+/* start book shelf .html style*/
+
+.text-center {
+    text-align: center
+}
+
+.bookShelf {
+    background: linear-gradient(to left bottom, #592A20, rgba(89, 42, 32, .53), #E1BEA3, #DC864E);
+    background: url("../images/books-2596809_1920.jpg") fixed 0% 0% no-repeat
+}
+
+.bookShelf .container {
+    background: #FAF5F1;
+    background: rgba(0, 0, 0, .7);
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    padding: 30px;
+    border: 10px double #DC864E;
+    border-top: none;
+    border-bottom: none
+}
+
+.bookShelf .container .BookCategory {
+    width: 95%;
+    margin: auto;
+    padding: 32px 0px
+}
+
+.bookShelf .container h2,
+.bookShelf .container .btn {
+    font-size: 40px;
+    color: #592A20;
+    background: repeating-linear-gradient(45deg, #FAF5F1 150px, #DC864E);
+    padding: 10px;
+    margin-bottom: 70px;
+    border-radius: 5px;
+    margin-top: 70px;
+    box-shadow: 2px 2px 10px 2px #DC864E;
+    text-shadow: .5px .5px 1px #592A20;
+}
+
+.bookShelf .container .btn a {
+    width: 100%;
+    font-size: 20px;
+    color: #592A20;
+    padding: 10px;
+    display: inline-block
+}
+
+.bookShelf .container .btn {
+    background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 580px);
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 10px
+}
+
+.bookShelf .container .books {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bookShelf .container .books .book {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 2px;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid #d3cbcb;
+    background: rgba(255, 255, 255, .8);
+    margin-bottom: 40px
+}
+
+.bookShelf .container .books .book .image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-bottom: 5px solid #DC864E
+}
+
+.bookShelf .container .books .book .image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.bookShelf .container .books .book .image .overflow {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #592a2082;
+    display: flex;
+    justify-content: center;
+    ;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    opacity: 0%
+}
+
+.bookShelf .container .books .book .image .overflow a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 3px solid #DC864E;
+    padding-left: 12px;
+    font-size: 30px;
+    font-family: monospace;
+    color: #fff;
+    transform: rotate(45deg);
+    background: transparent;
+    transition: all 1s ease-in-out;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.bookShelf .container .books .row .book:last-of-type {
+    margin-right: 0px
+}
+
+.bookShelf .container .books .book .image .overflow a span {
+    transform: rotate(42deg)
+}
+
+.bookShelf .container .books .book .image .overflow a:hover {
+    background: #faf5f1;
+    color: #592A20;
+    transform: rotate(405deg)
+}
+
+.bookShelf .container .books .book .image:hover .overflow {
+    opacity: 100%;
+}
+
+.bookShelf .container .books .book h3 {
+    padding: 15px 0px 10px;
+    font-size: 20px;
+    color: #592A20;
+}
+
+.bookShelf .container .books .book ul.rate {
+    width: 100%;
+    padding: 5px 0px
+}
+
+.bookShelf .container .books .book ul.rate li {
+    display: inline-flex
+}
+
+.bookShelf .container .books .book ul.rate li i {
+    border-color: #592A20;
+    color: #DC864E;
 }

@@ -48,12 +48,13 @@ $(document).ready(function() {
         $("." + $(this).data('class')).removeClass('hiden').siblings().addClass('hiden');
 
 
+
     });
 
 
     $(window).on('load', function() {
 
-        if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signin") {
+        if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html") {
 
             window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signin";
             $("#signin").removeClass('hiden').siblings().addClass('hiden');
@@ -61,9 +62,17 @@ $(document).ready(function() {
 
         } else if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup") {
 
-            window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup"
+            window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup";
             $("#signup").removeClass('hiden').siblings().addClass('hiden');
         }
+
+    });
+
+    $('.Sign .signLinks li a').on('dblclick', function() {
+
+
+        console.log(document.location.href)
+
 
     });
 
