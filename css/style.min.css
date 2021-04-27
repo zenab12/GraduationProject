@@ -952,7 +952,7 @@ input[type=checkbox]:checked:after {
 .bookShelf .container .books .book .image .overflow a span {
     transform: rotate(42deg);
     display: flex;
-    margin-left: 7px
+    margin-left: 2px
 }
 
 .bookShelf .container .books .book .image .overflow a:hover {
