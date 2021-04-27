@@ -940,19 +940,17 @@ input[type=checkbox]:checked:after {
     transform: rotate(45deg);
     background: transparent;
     transition: all 1s ease-in-out;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 50px;
+    padding: 0px;
 }
 
 .bookShelf .container .books .book .image .overflow a span {
-    transform: rotate(42deg);
-    display: flex;
-    margin-left: 2px
+    transform: rotate(-45deg);
+    display: inline-flex;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .bookShelf .container .books .book .image .overflow a:hover {
