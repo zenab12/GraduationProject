@@ -253,7 +253,7 @@
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 59px;
                                         height: 58px;
-                                        padding-left: 18px;
+                                        padding-left: 10px;
                                         font-size: 45px
                                     }
                                     .bookShelf .container .books .book.active {
@@ -609,7 +609,7 @@
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 45px;
                                         height: 45px;
-                                        padding-left: 14px;
+                                        padding-left: 10px;
                                         font-size: 36px
                                     }
                                     .bookShelf .container .controls {
