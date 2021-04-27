@@ -247,19 +247,25 @@
                                     }
                                     .bookShelf .container .btn {
                                         background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 192px);
-                                        display: flex;
                                         margin: 10px 0px;
                                         box-shadow: .5px .5px 9px .5px #dc864e;
-                                    }
-                                    .bookShelf .container .books .book:first-of-type {
-                                        display: flex;
-                                        width: 90%
                                     }
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 59px;
                                         height: 58px;
-                                        padding-left: 17px;
+                                        padding-left: 18px;
                                         font-size: 45px
+                                    }
+                                    .bookShelf .container .books .book.active {
+                                        display: flex;
+                                        width: 90%
+                                    }
+                                    .bookShelf .container .books {
+                                        width: 80%;
+                                        margin: auto
+                                    }
+                                    .bookShelf .container .controls {
+                                        display: flex;
                                     }
                                 }
                                 
@@ -291,7 +297,6 @@
                                     }
                                     .bookShelf .container .btn {
                                         background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 300px);
-                                        display: flex;
                                         margin: 10px 0px;
                                         box-shadow: .5px .5px 9px .5px #dc864e;
                                     }
@@ -343,6 +348,11 @@
                                         order: 4;
                                         font-size: 16px;
                                         padding-left: 1%
+                                    }
+                                    .bookShelf .container .controls i {
+                                        font-size: 18px;
+                                        padding: 6px 5px;
+                                        border-width: 3px;
                                     }
                                 }
                                 
@@ -589,7 +599,6 @@
                                     }
                                     .bookShelf .container .btn {
                                         background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 432px);
-                                        display: none;
                                         margin: 10px 0px;
                                         box-shadow: .5px .5px 9px .5px #dc864e;
                                     }
@@ -602,6 +611,9 @@
                                         height: 45px;
                                         padding-left: 14px;
                                         font-size: 36px
+                                    }
+                                    .bookShelf .container .controls {
+                                        display: none;
                                     }
                                 }
                                 
@@ -756,10 +768,10 @@
                                         padding: 30px
                                     }
                                     .bookShelf .container .books {
-                                        justify-content: space-between
+                                        justify-content: space-evenly;
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 200px
+                                        height: 190px
                                     }
                                     .bookShelf .container h2 {
                                         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
@@ -768,11 +780,10 @@
                                     }
                                     .bookShelf .container .btn {
                                         background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 432px);
-                                        display: none;
                                     }
                                     .bookShelf .container .books .book {
                                         display: flex;
-                                        width: 190px
+                                        width: 220px
                                     }
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 45px;
@@ -862,7 +873,7 @@
                                         padding: 30px
                                     }
                                     .bookShelf .container .books {
-                                        justify-content: space-between;
+                                        justify-content: space-evenly;
                                     }
                                     .bookShelf .container .books .book .image {
                                         height: 250px;
@@ -873,12 +884,10 @@
                                         font-size: 40px;
                                         ;
                                     }
-                                    .bookShelf .container .btn {
-                                        display: none;
-                                    }
+                                    .bookShelf .container .btn {}
                                     .bookShelf .container .books .book {
                                         display: flex;
-                                        width: 220px
+                                        width: 230px
                                     }
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 45px;

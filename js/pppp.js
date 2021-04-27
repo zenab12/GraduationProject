@@ -77,4 +77,48 @@ $(document).ready(function() {
     });
 
 
+
+    // create slider of books on mobile screen 
+
+    let books = $('.books').children().length - 1;
+
+    console.log(books);
+
+
+    $('.bookShelf .fa-chevron-left').on('click', function() {
+
+        if ($('.books .book').eq(0).hasClass('active') === true) {
+
+            console.log($('.books .book').eq(0).hasClass('active'));
+            $('.books .book').eq(`${books}`).addClass('active').siblings().removeClass('active');
+
+        } else {
+            $('.books .book.active').prev().addClass('active').siblings().removeClass('active');
+
+
+        };
+
+
+    });
+
+    $('.bookShelf .fa-chevron-right').on('click', function() {
+
+
+        if ($('.books .book').eq(`${books}`).hasClass('active') === true) {
+
+            console.log($('.books .book').eq(`${books}`).hasClass('active'));
+            $('.books .book').eq(0).addClass('active').siblings().removeClass('active');
+
+        } else {
+            $('.books .book.active').next().addClass('active').siblings().removeClass('active');
+
+
+        };
+
+
+    })
+
+
+
+
 });

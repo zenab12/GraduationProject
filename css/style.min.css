@@ -831,9 +831,11 @@ input[type=checkbox]:checked:after {
     width: 75%;
     height: 100%;
     padding: 30px;
+    padding-left: 0px;
     border: 10px double #DC864E;
     border-top: none;
-    border-bottom: none
+    border-bottom: none;
+    position: relative
 }
 
 .bookShelf .container .BookCategory {
@@ -868,20 +870,24 @@ input[type=checkbox]:checked:after {
     padding: 0px;
     width: 100%;
     text-align: center;
-    margin: 10px
+    margin: 10px;
+    display: flex
 }
 
 .bookShelf .container .books {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    background: transparent;
+    z-index: 999;
 }
 
 .bookShelf .container .books .book {
-    width: 220px;
+    width: 240px;
     display: flex;
     flex-direction: column;
     padding: 0px 0px 2px;
@@ -942,10 +948,6 @@ input[type=checkbox]:checked:after {
     margin-bottom: 50px;
 }
 
-.bookShelf .container .books .row .book:last-of-type {
-    margin-right: 0px
-}
-
 .bookShelf .container .books .book .image .overflow a span {
     transform: rotate(42deg)
 }
@@ -978,4 +980,29 @@ input[type=checkbox]:checked:after {
 .bookShelf .container .books .book ul.rate li i {
     border-color: #592A20;
     color: #DC864E;
+}
+
+.bookShelf .container .controls {
+    width: 100%;
+    position: absolute;
+    padding-right: 10px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    display: none
+}
+
+.bookShelf .container .controls i {
+    color: #592A20;
+    font-size: 20px;
+    padding: 6px 7px;
+    background: #fff;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 5px solid #592A20;
 }
