@@ -931,8 +931,9 @@ input[type=checkbox]:checked:after {
     width: 40px;
     height: 40px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border: 3px solid #DC864E;
-    padding-left: 12px;
     font-size: 30px;
     font-family: monospace;
     color: #fff;
@@ -949,7 +950,9 @@ input[type=checkbox]:checked:after {
 }
 
 .bookShelf .container .books .book .image .overflow a span {
-    transform: rotate(42deg)
+    transform: rotate(42deg);
+    display: flex;
+    margin-left: 7px
 }
 
 .bookShelf .container .books .book .image .overflow a:hover {

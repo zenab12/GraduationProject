@@ -253,7 +253,6 @@
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 59px;
                                         height: 58px;
-                                        padding-left: 10px;
                                         font-size: 45px
                                     }
                                     .bookShelf .container .books .book.active {
@@ -609,7 +608,6 @@
                                     .bookShelf .container .books .book .image .overflow a {
                                         width: 45px;
                                         height: 45px;
-                                        padding-left: 10px;
                                         font-size: 36px
                                     }
                                     .bookShelf .container .controls {
@@ -785,12 +783,6 @@
                                         display: flex;
                                         width: 220px
                                     }
-                                    .bookShelf .container .books .book .image .overflow a {
-                                        width: 45px;
-                                        height: 45px;
-                                        padding-left: 14px;
-                                        font-size: 36px
-                                    }
                                 }
                                 
                                 @media(min-width:1200px) {
@@ -888,11 +880,5 @@
                                     .bookShelf .container .books .book {
                                         display: flex;
                                         width: 230px
-                                    }
-                                    .bookShelf .container .books .book .image .overflow a {
-                                        width: 45px;
-                                        height: 45px;
-                                        padding-left: 14px;
-                                        font-size: 36px
                                     }
                                 }
