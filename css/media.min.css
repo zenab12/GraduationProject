@@ -235,7 +235,7 @@
                                         justify-content: center
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 240px
+                                        height: 350px
                                     }
                                     .bookShelf .container h2 {
                                         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
@@ -299,7 +299,7 @@
                                         box-shadow: .5px .5px 9px .5px #dc864e;
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 300px
+                                        height: 460px
                                     }
                                     .bookShelf .container .books .book {
                                         width: 80%
@@ -333,7 +333,7 @@
                                         margin-top: 10px
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 400px
+                                        height: 460px
                                     }
                                     .bookShelf .container .btn {
                                         background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 420px);
@@ -591,7 +591,7 @@
                                         display: flex;
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 200px
+                                        height: 260px
                                     }
                                     .bookShelf .container h2 {
                                         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
@@ -778,7 +778,7 @@
                                         justify-content: space-evenly;
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 190px
+                                        height: 300px
                                     }
                                     .bookShelf .container h2 {
                                         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
@@ -790,7 +790,7 @@
                                     }
                                     .bookShelf .container .books .book {
                                         display: flex;
-                                        width: 220px
+                                        width: 225px
                                     }
                                     .bookShelf .container .books .book h3 {
                                         font-size: 28px;
@@ -887,7 +887,7 @@
                                         justify-content: space-evenly;
                                     }
                                     .bookShelf .container .books .book .image {
-                                        height: 250px;
+                                        height: 345px;
                                     }
                                     .bookShelf .container h2 {
                                         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
