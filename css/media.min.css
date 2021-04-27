@@ -234,11 +234,8 @@
                                     .bookShelf .container .books {
                                         justify-content: center
                                     }
-                                    .bookShelf .container .books .book {
-                                        display: none;
-                                    }
                                     .bookShelf .container .books .book .image {
-                                        height: 320px
+                                        height: 100px
                                     }
                                     .bookShelf .container h2 {
                                         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
@@ -251,20 +248,27 @@
                                         box-shadow: .5px .5px 9px .5px #dc864e;
                                     }
                                     .bookShelf .container .books .book .image .overflow a {
-                                        width: 59px;
-                                        height: 58px;
-                                        font-size: 45px
-                                    }
-                                    .bookShelf .container .books .book.active {
-                                        display: flex;
-                                        width: 90%
+                                        width: 29px;
+                                        height: 29px;
+                                        font-size: 20px
                                     }
                                     .bookShelf .container .books {
-                                        width: 80%;
-                                        margin: auto
+                                        width: 95%;
+                                        margin: auto;
+                                        justify-content: space-between
+                                    }
+                                    .bookShelf .container .books .book {
+                                        width: 85px
                                     }
                                     .bookShelf .container .controls {
                                         display: flex;
+                                    }
+                                    .bookShelf .container .books .book h3 {
+                                        font-size: 15px;
+                                        padding-bottom: 2px
+                                    }
+                                    .bookShelf .container .books .book ul.rate li i {
+                                        font-size: 10px
                                     }
                                 }
                                 
@@ -299,8 +303,8 @@
                                         margin: 10px 0px;
                                         box-shadow: .5px .5px 9px .5px #dc864e;
                                     }
-                                    .bookShelf .container .books .book .image {
-                                        height: 400px
+                                    .bookShelf .container .books .book {
+                                        width: 125px
                                     }
                                 }
                                 
@@ -353,6 +357,9 @@
                                         padding: 6px 5px;
                                         border-width: 3px;
                                     }
+                                    .bookShelf .container .books .book {
+                                        width: 115px
+                                    }
                                 }
                                 
                                 @media (max-width:280px) {
@@ -372,6 +379,9 @@
                                         order: 4;
                                         font-size: 14px;
                                         padding-left: 0
+                                    }
+                                    .bookShelf .container .books .book {
+                                        width: 92px
                                     }
                                 }
                                 
@@ -613,6 +623,13 @@
                                     .bookShelf .container .controls {
                                         display: none;
                                     }
+                                    .bookShelf .container .books .book h3 {
+                                        font-size: 25px;
+                                        padding-bottom: 5px
+                                    }
+                                    .bookShelf .container .books .book ul.rate li i {
+                                        font-size: 15px
+                                    }
                                 }
                                 
                                 @media (min-width:992px) and (max-width:1999px) {
@@ -782,6 +799,16 @@
                                     .bookShelf .container .books .book {
                                         display: flex;
                                         width: 220px
+                                    }
+                                    .bookShelf .container .books .book h3 {
+                                        font-size: 28px;
+                                        padding-bottom: 10px
+                                    }
+                                    .bookShelf .container .books .book ul.rate li i {
+                                        font-size: 18px
+                                    }
+                                    .bookShelf .container .books .book ul.rate {
+                                        padding-bottom: 10px
                                     }
                                 }
                                 
