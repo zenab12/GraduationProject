@@ -80,20 +80,23 @@ $(document).ready(function() {
 
     // create slider of books on mobile screen 
 
-    let books = $('.books').children().length - 1;
+    let rows = $('.books').children().length - 1;
 
-    console.log(books);
+    console.log(rows);
 
 
-    $('.bookShelf .fa-chevron-left').on('click', function() {
+    $('.recentlyStories .fa-chevron-left').on('click', function() {
 
-        if ($('.books .book').eq(0).hasClass('active') === true) {
+        if ($('.books .row').eq(0).hasClass('active') === true) {
 
-            console.log($('.books .book').eq(0).hasClass('active'));
-            $('.books .book').eq(`${books}`).addClass('active').siblings().removeClass('active');
+            console.log($('.books .row').eq(0).hasClass('active'));
+            $('.books .row').eq(`${rows}`).addClass('active').siblings().removeClass('active');
+            $('.indicators li').eq(`${rows}`).addClass('active').siblings().removeClass('active');
+
 
         } else {
-            $('.books .book.active').prev().addClass('active').siblings().removeClass('active');
+            $('.books .row.active').prev().addClass('active').siblings().removeClass('active');
+            $('.indicators li.active').prev().addClass('active').siblings().removeClass('active');
 
 
         };
@@ -101,24 +104,71 @@ $(document).ready(function() {
 
     });
 
-    $('.bookShelf .fa-chevron-right').on('click', function() {
 
 
-        if ($('.books .book').eq(`${books}`).hasClass('active') === true) {
+    $('.recentlyStories .fa-chevron-right').on('click', function() {
 
-            console.log($('.books .book').eq(`${books}`).hasClass('active'));
-            $('.books .book').eq(0).addClass('active').siblings().removeClass('active');
+
+        if ($('.books .row').eq(`${rows}`).hasClass('active') === true) {
+
+            console.log($('.books .row').eq(`${rows}`).hasClass('active'));
+            $('.books .row').eq(0).addClass('active').siblings().removeClass('active');
+            $('.indicators li').eq(0).addClass('active').siblings().removeClass('active');
+
 
         } else {
-            $('.books .book.active').next().addClass('active').siblings().removeClass('active');
+            $('.books .row.active').next().addClass('active').siblings().removeClass('active');
+            $('.indicators li.active').next().addClass('active').siblings().removeClass('active');
+
 
 
         };
 
 
-    })
+    });
 
 
+
+    for (let index = 0; index < $('.books').children().length; index++) {
+
+
+        let row = $('.books').children()[index];
+        $($('.books').children()[index]).addClass(`${index}`);
+
+        console.log(row);
+
+        // create li based on row numbers 
+
+        let li = $(`<li data-row=${index}></li>`);
+        $('.indicators').append(li);
+        $('.indicators li').css('width', `${($('.indicators').width()) / (($('.books').children().length))}`)
+        $('.indicators li:first-of-type').addClass('active');
+
+    }
+
+    $('.indicators li').on('click', function() {
+
+
+        $(this).addClass('active').siblings().removeClass('active');
+        $("." + $(this).data('row')).addClass('active').siblings().removeClass('active');
+
+
+
+    });
+
+
+    $('.questionContainer p.question i').on('click', function() {
+
+        $(this).parent().siblings().slideToggle();
+        $(this).parent().parent().siblings().find($('p.Answer')).slideUp();
+        $(this).parent().parent().siblings().find($('i')).removeClass('fa-sort-up');
+        $(this).toggleClass('fa-sort-up');
+        $(this).parent().toggleClass('border');
+        $(this).parent().parent().siblings().find($('p.question')).removeClass('border');
+
+
+
+    });
 
 
 });
