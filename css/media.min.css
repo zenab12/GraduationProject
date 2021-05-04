@@ -265,6 +265,163 @@
                                     .bookShelf .container .controls {
                                         display: flex;
                                     }
+                                    section.mainSlider {
+                                        background: url(../images/slider.png)no-repeat fixed 50%;
+                                        max-width: 100%;
+                                    }
+                                    section.mainSlider .container,
+                                    .ourServices .container {
+                                        width: 95%;
+                                        border-width: 5px;
+                                        ;
+                                    }
+                                    section.mainSlider .container h1,
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 30px;
+                                        text-align: center;
+                                    }
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 25px;
+                                    }
+                                    section.ourServices .container h2 {
+                                        width: 100%;
+                                    }
+                                    section.ourServices .container h3 {
+                                        font-size: 22px;
+                                    }
+                                    section.mainSlider .container p,
+                                    section.ourServices .container p {
+                                        font-size: 20px;
+                                        width: 75%;
+                                        line-height: 37px;
+                                    }
+                                    section.ourServices .container p {
+                                        font-size: 17px;
+                                    }
+                                    section.mainSlider .container .btns {
+                                        width: 90%;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                    section.mainSlider .container .btns a,
+                                    section.ourServices .container a {
+                                        font-size: 24px;
+                                        width: 100%;
+                                        border-radius: 4px;
+                                        margin-bottom: 20px
+                                    }
+                                    .ourServices .container>div {
+                                        flex-wrap: wrap;
+                                        margin-bottom: 20px;
+                                        ;
+                                    }
+                                    .ourServices .container>div:last-of-type {
+                                        margin-bottom: 20px;
+                                        ;
+                                    }
+                                    .ourServices .container>div .images {
+                                        width: 250px;
+                                        height: 250px;
+                                        border-radius: 50%;
+                                        border-width: 5px;
+                                        border-bottom: 5px solid #fff;
+                                        border-top: 5px solid #fff;
+                                        margin: 20px auto
+                                    }
+                                    .ourServices .container .translation .images {
+                                        order: 0;
+                                    }
+                                    .ourServices .container>div .caption {
+                                        width: 100%;
+                                        padding: 10px 3px;
+                                    }
+                                    .ourServices .container>div .caption p {
+                                        font-size: 15px;
+                                    }
+                                    section.ourServices .container a {
+                                        width: 85%;
+                                        display: inline-block;
+                                        padding: 5px;
+                                        font-size: 17px;
+                                        margin: 10px auto;
+                                    }
+                                    section.recentlyStories .container {
+                                        width: 95%;
+                                        border-width: 5px;
+                                    }
+                                    section.recentlyStories .container h2 {
+                                        width: 90%;
+                                        font-size: 25px;
+                                        border-radius: 4px;
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 3px;
+                                    }
+                                    section.recentlyStories .container .controls i {
+                                        font-size: 18px;
+                                        padding: 5px;
+                                        border-width: 3.5px;
+                                    }
+                                    section.recentlyStories .container .books {
+                                        position: relative;
+                                        width: 80%;
+                                        z-index: 222;
+                                        justify-content: space-evenly;
+                                        margin: auto
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 120px
+                                    }
+                                    section.recentlyStories .container .books .book h3 {
+                                        font-size: 15px;
+                                        text-align: left;
+                                    }
+                                    section.recentlyStories .container .books .book .rate {
+                                        font-size: 10px
+                                    }
+                                    section.recentlyStories .container .books .book .image .overflow a {
+                                        width: 25px;
+                                        height: 25px;
+                                        font-size: 15px;
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 80px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 60%;
+                                    }
+                                    .questionsSection .container {
+                                        width: 90%;
+                                    }
+                                    .questionsSection .container h2 {
+                                        font-size: 25px;
+                                    }
+                                    .questionContainer {
+                                        width: 100%;
+                                        position: relative;
+                                        margin-bottom: 35px;
+                                        color: #9499A6;
+                                    }
+                                    .questionContainer p.Answer {
+                                        line-height: 25px;
+                                        font-size: 14px;
+                                    }
+                                    .questionContainer p.question {
+                                        font-size: 14px;
+                                        padding: 15px 10px;
+                                    }
+                                    .questionContainer p.question i {
+                                        font-size: 18px;
+                                    }
+                                    *::selection {
+                                        background-color: #fff
+                                    }
                                 }
                                 
                                 @media(min-width:500px) and (max-width:660px) {
@@ -304,6 +461,48 @@
                                     .bookShelf .container .books .book {
                                         width: 80%
                                     }
+                                    section.recentlyStories .container .books {
+                                        position: relative;
+                                        width: 90%;
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 8px;
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 160px
+                                    }
+                                    section.recentlyStories .container .books .book .rate {
+                                        font-size: 10px
+                                    }
+                                    section.recentlyStories .container .books .book .image .overflow a {
+                                        width: 25px;
+                                        height: 25px;
+                                        font-size: 15px;
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 130px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 60%;
+                                    }
+                                    .questionsSection .container {
+                                        width: 90%;
+                                    }
+                                    .questionContainer {
+                                        width: 95%;
+                                    }
+                                    .questionContainer p.Answer {
+                                        font-size: 18px;
+                                    }
+                                    .questionContainer p.question {
+                                        font-size: 18px;
+                                    }
+                                    .questionContainer p.question i {
+                                        font-size: 22px;
+                                    }
                                 }
                                 
                                 @media(min-width:661px) and (max-width:767px) {
@@ -341,6 +540,48 @@
                                         margin: 10px 0px;
                                         box-shadow: .5px .5px 9px .5px #dc864e;
                                     }
+                                    section.recentlyStories .container .books {
+                                        position: relative;
+                                        width: 90%;
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 8px;
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 160px
+                                    }
+                                    section.recentlyStories .container .books .book .rate {
+                                        font-size: 10px
+                                    }
+                                    section.recentlyStories .container .books .book .image .overflow a {
+                                        width: 25px;
+                                        height: 25px;
+                                        font-size: 15px;
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 130px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 60%;
+                                    }
+                                    .questionsSection .container {
+                                        width: 90%;
+                                    }
+                                    .questionContainer {
+                                        width: 95%;
+                                    }
+                                    .questionContainer p.Answer {
+                                        font-size: 18px;
+                                    }
+                                    .questionContainer p.question {
+                                        font-size: 18px;
+                                    }
+                                    .questionContainer p.question i {
+                                        font-size: 22px;
+                                    }
                                 }
                                 
                                 @media (max-width:320px) {
@@ -374,6 +615,34 @@
                                         order: 4;
                                         font-size: 14px;
                                         padding-left: 0
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 2px;
+                                    }
+                                    section.recentlyStories .container .controls i {
+                                        font-size: 10px;
+                                        padding: 3px;
+                                        border-width: 2px;
+                                        border-radius: 5px;
+                                        ;
+                                    }
+                                    section.recentlyStories .container {
+                                        width: 100%
+                                    }
+                                    section.recentlyStories .container .books {
+                                        width: 90%
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 110px
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 75px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 60%;
                                     }
                                 }
                                 
@@ -622,6 +891,151 @@
                                     .bookShelf .container .books .book ul.rate li i {
                                         font-size: 15px
                                     }
+                                    section.mainSlider .container,
+                                    .ourServices .container {
+                                        width: 95%;
+                                        border-width: 5px;
+                                        ;
+                                    }
+                                    section.mainSlider .container h1,
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 40px;
+                                        text-align: center;
+                                    }
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 30px;
+                                    }
+                                    section.ourServices .container h2 {
+                                        width: 100%;
+                                    }
+                                    section.ourServices .container h3 {
+                                        font-size: 25px;
+                                        text-align: left;
+                                        padding-left: 46px;
+                                    }
+                                    section.mainSlider .container p,
+                                    section.ourServices .container p {
+                                        font-size: 20px;
+                                        width: 75%;
+                                        line-height: 37px;
+                                    }
+                                    section.ourServices .container p {
+                                        font-size: 17px;
+                                    }
+                                    section.mainSlider .container .btns {
+                                        width: 100%;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: center;
+                                        justify-content: space-evenly
+                                    }
+                                    section.mainSlider .container .btns a,
+                                    section.ourServices .container a {
+                                        font-size: 24px;
+                                        width: 45%;
+                                        border-radius: 4px;
+                                        margin-bottom: 20px
+                                    }
+                                    .ourServices .container>div {
+                                        flex-wrap: wrap;
+                                        margin-bottom: 80px;
+                                        ;
+                                    }
+                                    .ourServices .container>div:last-of-type {
+                                        margin-bottom: 20px;
+                                        ;
+                                    }
+                                    .ourServices .container>div .images {
+                                        width: 250px;
+                                        height: 250px;
+                                        border-radius: 50%;
+                                        border-width: 5px;
+                                    }
+                                    .ourServices .container .translation .images {
+                                        order: 2;
+                                    }
+                                    .ourServices .container>div .caption {
+                                        width: 60%;
+                                        padding: 10px 3px;
+                                    }
+                                    .ourServices .container>div .caption p {
+                                        font-size: 20px;
+                                    }
+                                    section.ourServices .container a {
+                                        width: 85%;
+                                        display: inline-block;
+                                        padding: 5px;
+                                        font-size: 17px;
+                                        margin: 10px auto;
+                                    }
+                                    section.recentlyStories .container {
+                                        width: 95%;
+                                        border-width: 5px;
+                                    }
+                                    section.recentlyStories .container h2 {
+                                        width: 90%;
+                                        font-size: 25px;
+                                        border-radius: 4px;
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 10px;
+                                    }
+                                    section.recentlyStories .container .controls i {
+                                        font-size: 23px;
+                                    }
+                                    section.recentlyStories .container .books {
+                                        position: relative;
+                                        width: 85%;
+                                        z-index: 222;
+                                        justify-content: space-evenly;
+                                        margin: auto
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 230px
+                                    }
+                                    section.recentlyStories .container .books .book h3 {
+                                        font-size: 20px;
+                                        text-align: center;
+                                    }
+                                    section.recentlyStories .container .books .book .rate {
+                                        font-size: 15px
+                                    }
+                                    section.recentlyStories .container .books .book .image .overflow a {
+                                        width: 25px;
+                                        height: 25px;
+                                        font-size: 15px;
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 180px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 60%;
+                                    }
+                                    .questionsSection .container {
+                                        width: 90%;
+                                    }
+                                    .questionsSection .container h2 {
+                                        font-size: 25px;
+                                    }
+                                    .questionContainer {
+                                        width: 100%;
+                                    }
+                                    .questionContainer p.Answer {
+                                        line-height: 35px;
+                                        font-size: 18px;
+                                    }
+                                    .questionContainer p.question {
+                                        font-size: 18px;
+                                        padding: 15px 10px;
+                                    }
+                                    .questionContainer p.question i {
+                                        font-size: 23px;
+                                    }
                                 }
                                 
                                 @media (min-width:992px) and (max-width:1999px) {
@@ -802,6 +1216,150 @@
                                     .bookShelf .container .books .book ul.rate {
                                         padding-bottom: 10px
                                     }
+                                    section.mainSlider .container,
+                                    .ourServices .container {
+                                        width: 90%;
+                                        border-width: 10px;
+                                        ;
+                                    }
+                                    section.mainSlider .container h1,
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 50px;
+                                        text-align: center;
+                                    }
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 40px;
+                                    }
+                                    section.ourServices .container h2 {
+                                        width: 100%;
+                                    }
+                                    section.ourServices .container h3 {
+                                        font-size: 35px;
+                                        text-align: left;
+                                        width: 85%
+                                    }
+                                    section.mainSlider .container p,
+                                    section.ourServices .container p {
+                                        font-size: 25px;
+                                        width: 75%;
+                                        line-height: 45px;
+                                    }
+                                    section.mainSlider .container .btns {
+                                        width: 100%;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: center;
+                                        justify-content: center
+                                    }
+                                    section.mainSlider .container .btns a,
+                                    section.ourServices .container a {
+                                        font-size: 27px;
+                                        width: 30%;
+                                        border-radius: 4px;
+                                        margin-bottom: 20px;
+                                        margin-right: 25px
+                                    }
+                                    .ourServices .container>div {
+                                        flex-wrap: wrap;
+                                        margin-bottom: 80px;
+                                        ;
+                                    }
+                                    .ourServices .container>div:last-of-type {
+                                        margin-bottom: 20px;
+                                        ;
+                                    }
+                                    .ourServices .container>div .images {
+                                        width: 250px;
+                                        height: 250px;
+                                        border-radius: 50%;
+                                        border-width: 5px;
+                                    }
+                                    .ourServices .container .translation .images {
+                                        order: 2;
+                                    }
+                                    .ourServices .container>div .caption {
+                                        width: 70%;
+                                        padding: 10px 3px;
+                                    }
+                                    .ourServices .container>div .caption p {
+                                        font-size: 30px;
+                                        width: 85%
+                                    }
+                                    section.ourServices .container a {
+                                        width: 85%;
+                                        display: inline-block;
+                                        padding: 5px;
+                                        font-size: 17px;
+                                        margin: 10px auto;
+                                    }
+                                    section.recentlyStories .container {
+                                        width: 90%;
+                                        border-width: 5px;
+                                    }
+                                    section.recentlyStories .container h2 {
+                                        width: 90%;
+                                        font-size: 30px;
+                                        border-radius: 4px;
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 15px;
+                                    }
+                                    section.recentlyStories .container .controls i {
+                                        font-size: 25px;
+                                    }
+                                    section.recentlyStories .container .books {
+                                        position: relative;
+                                        width: 85%;
+                                        z-index: 222;
+                                        justify-content: space-evenly;
+                                        margin: auto
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 320px
+                                    }
+                                    section.recentlyStories .container .books .book h3 {
+                                        font-size: 24px;
+                                        text-align: center;
+                                    }
+                                    section.recentlyStories .container .books .book .rate {
+                                        font-size: 18px
+                                    }
+                                    section.recentlyStories .container .books .book .image .overflow a {
+                                        width: 35px;
+                                        height: 35px;
+                                        font-size: 23px;
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 230px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 60%;
+                                    }
+                                    .questionsSection .container {
+                                        width: 90%;
+                                    }
+                                    .questionsSection .container h2 {
+                                        font-size: 40px;
+                                    }
+                                    .questionContainer {
+                                        width: 95%;
+                                    }
+                                    .questionContainer p.Answer {
+                                        line-height: 35px;
+                                        font-size: 25px;
+                                    }
+                                    .questionContainer p.question {
+                                        font-size: 25px;
+                                        padding: 15px 10px;
+                                    }
+                                    .questionContainer p.question i {
+                                        font-size: 26px;
+                                    }
                                 }
                                 
                                 @media(min-width:1200px) {
@@ -901,5 +1459,152 @@
                                     .bookShelf .container .books .book {
                                         display: flex;
                                         width: 245px
+                                    }
+                                    section.mainSlider .container,
+                                    .ourServices .container {
+                                        width: 85%;
+                                        border-width: 10px;
+                                        ;
+                                    }
+                                    section.mainSlider .container h1,
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 50px;
+                                        text-align: center;
+                                    }
+                                    section.ourServices .container h2,
+                                    section.ourServices .container h3 {
+                                        font-size: 40px;
+                                    }
+                                    section.ourServices .container h2 {
+                                        width: 100%;
+                                    }
+                                    section.ourServices .container h3 {
+                                        font-size: 35px;
+                                        text-align: left;
+                                        width: 85%
+                                    }
+                                    section.mainSlider .container p,
+                                    section.ourServices .container p {
+                                        font-size: 25px;
+                                        width: 65%;
+                                        line-height: 45px;
+                                    }
+                                    section.mainSlider .container .btns {
+                                        width: 100%;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: center;
+                                        justify-content: center
+                                    }
+                                    section.mainSlider .container .btns a,
+                                    section.ourServices .container a {
+                                        font-size: 27px;
+                                        width: 25%;
+                                        border-radius: 4px;
+                                        margin-bottom: 20px;
+                                        margin-right: 25px
+                                    }
+                                    .ourServices .container>div {
+                                        flex-wrap: wrap;
+                                        margin-bottom: 100px;
+                                        ;
+                                    }
+                                    .ourServices .container>div:last-of-type {
+                                        margin-bottom: 20px;
+                                        ;
+                                    }
+                                    .ourServices .container>div .images {
+                                        width: 300px;
+                                        height: 300px;
+                                        border-radius: 50%;
+                                        border-width: 10px;
+                                    }
+                                    .ourServices .container .translation .images {
+                                        order: 2;
+                                    }
+                                    .ourServices .container>div .caption {
+                                        width: 60%;
+                                        padding: 10px 3px;
+                                    }
+                                    .ourServices .container>div .caption p {
+                                        font-size: 25px;
+                                        width: 85%
+                                    }
+                                    section.ourServices .container a {
+                                        width: 50%;
+                                        display: inline-block;
+                                        padding: 5px;
+                                        font-size: 25px;
+                                        margin: 10px auto;
+                                    }
+                                    section.recentlyStories .container {
+                                        width: 85%;
+                                        border-width: 10px;
+                                    }
+                                    section.recentlyStories .container h2 {
+                                        width: 90%;
+                                        font-size: 40px;
+                                        border-radius: 4px;
+                                    }
+                                    section.recentlyStories .container .controls {
+                                        padding: 0px 10px;
+                                    }
+                                    section.recentlyStories .container .controls i {
+                                        font-size: 25px;
+                                        font-weight: bold;
+                                        border-width: 6px;
+                                        border-radius: 10px;
+                                    }
+                                    section.recentlyStories .container .books {
+                                        position: relative;
+                                        width: 85%;
+                                        z-index: 222;
+                                        justify-content: space-evenly;
+                                        margin: auto
+                                    }
+                                    section.recentlyStories .container .books .book .image {
+                                        height: 430px
+                                    }
+                                    section.recentlyStories .container .books .book h3 {
+                                        font-size: 24px;
+                                        text-align: center;
+                                    }
+                                    section.recentlyStories .container .books .book .rate {
+                                        font-size: 18px
+                                    }
+                                    section.recentlyStories .container .books .book .image .overflow a {
+                                        width: 55px;
+                                        height: 55px;
+                                        font-size: 32px;
+                                    }
+                                    section.recentlyStories .container .books .book {
+                                        width: 300px;
+                                    }
+                                    section.recentlyStories .container .row {
+                                        width: 100%;
+                                    }
+                                    .recentlyStories .indicators {
+                                        width: 50%;
+                                    }
+                                    .questionsSection .container {
+                                        width: 85%;
+                                    }
+                                    .questionsSection .container h2 {
+                                        font-size: 45px;
+                                    }
+                                    .questionContainer {
+                                        width: 75%;
+                                    }
+                                    .questionContainer p.Answer {
+                                        line-height: 40px;
+                                        font-size: 27px;
+                                    }
+                                    .questionContainer p.question {
+                                        font-size: 27px;
+                                        padding: 15px 10px;
+                                    }
+                                    .questionContainer p.question i {
+                                        font-size: 34px;
                                     }
                                 }
