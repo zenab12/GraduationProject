@@ -54,30 +54,24 @@ $(document).ready(function() {
 
     $(window).on('load', function() {
 
-        if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html") {
+          if (window.location.hash == "#signin") {
 
-            window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signin";
-            $("#signin").removeClass('hiden').siblings().addClass('hiden');
-
-
-        } else if (window.location.href == "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup") {
-
-            window.location.href = "file:///C:/Users/user/MY-Github/GraduationProject/Sign.html#signup";
-            $("#signup").removeClass('hiden').siblings().addClass('hiden');
-        }
-
-    });
-
-    $('.Sign .signLinks li a').on('dblclick', function() {
+              window.location.hash == "#signin";
+              $("#signin").removeClass('hiden').siblings().addClass('hiden');
 
 
-        console.log(document.location.href)
+          } else if (window.location.hash == "#signup") {
 
+            window.location.hash == "#signup";
+              $("#signup").removeClass('hiden').siblings().addClass('hiden');
+          }else
+  {
+      window.location.hash = "#signin";
+    $("#signin").removeClass('hiden').siblings().addClass('hiden');
 
-    });
+  }
 
-
-
+      });
     // create slider of books on mobile screen 
 
     let rows = $('.books').children().length - 1;
