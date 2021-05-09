@@ -176,4 +176,3 @@ $(document).ready(function() {
     let fileName = $('.upload input').val();
     console.log(fileName);
 });
-});
