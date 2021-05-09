@@ -1408,3 +1408,148 @@
     .questionContainer p.question i.fa-sort-up {
         padding-top: 7px
     }
+    
+    .translationSec {
+        background: url(../images/web-design-2906159_1920.jpg) fixed 20% 0%;
+        background-size: cover;
+        max-width: 100%;
+    }
+    
+    .translationSec .container {
+        width: 75%;
+        height: 100%;
+        background-color: #f3d9c48c;
+        background: rgba(0, 0, 0, .8);
+        border: 10px double #dc864e;
+        border-top: 0px;
+        border-bottom: 0px;
+        margin: auto;
+        padding: 60px 0px 60px;
+    }
+    
+    .translationSec .container h1 {
+        padding: 16px 0px;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0px auto;
+        text-shadow: 1px 1px 1px #faf5f1;
+        color: #faf5f1;
+        color: transparent;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    
+    .translationSec .container h1:after {
+        content: " ";
+        width: 340px;
+        display: block;
+        margin: 30px auto 0px;
+        height: 5px;
+        background-color: #dc864e;
+    }
+    
+    .translationSec .container form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 80px auto 0px;
+        flex-wrap: wrap
+    }
+    
+    .translationSec .container form>div {
+        width: 45%
+    }
+    
+    .translationSec .container form>div label {
+        color: #DC864E;
+        display: block;
+        margin: 30px auto 12px;
+    }
+    
+    .translationSec .container form>div input,
+    .translationSec .container form>div textarea {
+        width: 100%;
+        background: #faf5f1;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #dc864e;
+        border-radius: 3px;
+        color: #dc864e;
+        ;
+    }
+    
+    .translationSec .container form>div textarea {
+        height: 244px
+    }
+    
+    .translationSec .container form>div .upload {
+        width: 100%;
+        position: relative;
+        height: 40px;
+        outline: none;
+        border-radius: 3px;
+    }
+    
+    .translationSec .container form>div .upload input {
+        position: absolute;
+        background: transparent;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 0;
+        color: #592a20;
+        padding: 0px;
+        border-radius: 3px;
+        border: none;
+        color: #dc864e;
+    }
+    
+    .translationSec .container form>div .upload p {
+        position: absolute;
+        z-index: 1;
+        background: #faf5f1;
+        top: 0;
+        height: 100%;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #dc864e;
+        border-radius: 3px;
+    }
+    
+    .translationSec .container form>div .upload p i {
+        color: #dc864e;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .translationSec .container form>div .upload p span {
+        color: #dc864e;
+    }
+    
+    .translationSec .container form input[type="submit"] {
+        width: 50%;
+        margin: 50px auto 0px;
+        text-align: center;
+        border: none;
+        outline: none;
+        background: repeating-linear-gradient(-45deg, #DC864E 0%, #FAF5F1 84%);
+        padding: 12px 0px;
+        border-radius: 4px;
+        color: #592a20;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        box-shadow: 0px 0px 3px 1px #dc864e;
+        cursor:pointer
+    }

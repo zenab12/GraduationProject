@@ -419,6 +419,60 @@
                                     .questionContainer p.question i {
                                         font-size: 18px;
                                     }
+
+
+    .translationSec .container {
+        width: 96%;     
+        border-width: 5px;
+       
+    }
+    
+    .translationSec .container h1 {
+       
+        font-size: 18px;
+    }
+    
+    .translationSec .container h1:after {
+        width: 200px;
+     
+    }
+    
+    .translationSec .container form {
+       
+        width: 90%;
+        justify-content:center;
+        margin:10px auto 0px;
+    }
+    
+    .translationSec .container form>div {
+        width: 90%;
+    }
+    
+ 
+   
+    
+    .translationSec .container form>div textarea {
+        height: 244px
+    }
+   
+    
+    
+    .translationSec .container form>div .upload p i {
+        font-size: 17px;
+    }
+    
+  
+    
+    .translationSec .container form input[type="submit"] {
+        width: 70%;
+        font-size: 19px;
+    
+    }
+
+
+
+
+
                                     *::selection {
                                         background-color: #fff
                                     }
@@ -582,6 +636,8 @@
                                     .questionContainer p.question i {
                                         font-size: 22px;
                                     }
+
+                                    
                                 }
                                 
                                 @media (max-width:320px) {
@@ -1036,6 +1092,50 @@
                                     .questionContainer p.question i {
                                         font-size: 23px;
                                     }
+                                    
+
+    .translationSec .container {
+        width: 95%;     
+        border-width: 7px;
+       
+    }
+    
+    .translationSec .container h1 {
+       
+        font-size: 22px;
+    }
+    
+    .translationSec .container h1:after {
+        width: 270px;
+     
+    }
+    
+    .translationSec .container form {
+       
+        width: 90%;
+        justify-content:space-between;
+        margin:20px auto 0px;
+    }
+    
+    .translationSec .container form>div {
+        width: 45%;
+    }
+    
+    
+    
+    .translationSec .container form>div .upload p i {
+        font-size: 19px;
+    }
+    
+  
+    
+    .translationSec .container form input[type="submit"] {
+        width: 60%;
+        font-size: 19px;
+    
+    }
+
+
                                 }
                                 
                                 @media (min-width:992px) and (max-width:1999px) {
@@ -1360,6 +1460,49 @@
                                     .questionContainer p.question i {
                                         font-size: 26px;
                                     }
+
+                                        .translationSec .container {
+        width: 86%;     
+        border-width: 10px;
+       
+    }
+    
+    .translationSec .container h1 {
+       
+        font-size: 26px;
+    }
+    
+    .translationSec .container h1:after {
+        width: 320px;
+     
+    }
+    
+    .translationSec .container form {
+       
+        width: 90%;
+        justify-content:space-between;
+        margin:20px auto 0px;
+    }
+    
+    .translationSec .container form>div {
+        width: 45%;
+    }
+    
+    
+    
+    .translationSec .container form>div .upload p i {
+        font-size: 21px;
+    }
+    
+  
+    
+    .translationSec .container form input[type="submit"] {
+        width: 60%;
+        font-size: 19px;
+    
+    }
+
+
                                 }
                                 
                                 @media(min-width:1200px) {
@@ -1607,4 +1750,47 @@
                                     .questionContainer p.question i {
                                         font-size: 34px;
                                     }
+
+                                        .translationSec .container {
+        width: 75%;     
+        border-width: 10px;
+       
+    }
+    
+    .translationSec .container h1 {
+       
+        font-size: 36px;
+    }
+    
+    .translationSec .container h1:after {
+        width: 340px;
+     
+    }
+    
+    .translationSec .container form {
+       
+        width: 90%;
+        justify-content:space-between;
+        margin:20px auto 0px;
+    }
+    
+    .translationSec .container form>div {
+        width: 45%;
+    }
+    
+    
+    
+    .translationSec .container form>div .upload p i {
+        font-size: 23px;
+    }
+    
+  
+    
+    .translationSec .container form input[type="submit"] {
+        width: 50%;
+        font-size: 23px;
+    
+    }
+
+
                                 }

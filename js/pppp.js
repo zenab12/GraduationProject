@@ -170,5 +170,15 @@ $(document).ready(function() {
 
     });
 
+    $('.upload input').on('change', function() {
 
+
+        let fileName = $(this).val();
+        $(this).parent().find('span').text(fileName);
+
+
+    });
+
+    let fileName = $('.upload input').val();
+    console.log(fileName);
 });
