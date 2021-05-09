@@ -166,7 +166,6 @@ $(document).ready(function() {
 
     $('.upload input').on('change', function() {
 
-<<<<<<< HEAD
 
         let fileName = $(this).val();
         $(this).parent().find('span').text(fileName);
@@ -177,6 +176,4 @@ $(document).ready(function() {
     let fileName = $('.upload input').val();
     console.log(fileName);
 });
-=======
 });
->>>>>>> 62e42b60c8773ee639ad676a69f26b17ccf92ef3
