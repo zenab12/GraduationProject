@@ -54,24 +54,23 @@ $(document).ready(function() {
 
     $(window).on('load', function() {
 
-          if (window.location.hash == "#signin") {
+        if (window.location.hash == "#signin") {
 
-              window.location.hash == "#signin";
-              $("#signin").removeClass('hiden').siblings().addClass('hiden');
+            window.location.hash == "#signin";
+            $("#signin").removeClass('hiden').siblings().addClass('hiden');
 
 
-          } else if (window.location.hash == "#signup") {
+        } else if (window.location.hash == "#signup") {
 
             window.location.hash == "#signup";
-              $("#signup").removeClass('hiden').siblings().addClass('hiden');
-          }else
-  {
-      window.location.hash = "#signin";
-    $("#signin").removeClass('hiden').siblings().addClass('hiden');
+            $("#signup").removeClass('hiden').siblings().addClass('hiden');
+        } else {
+            window.location.hash = "#signin";
+            $("#signin").removeClass('hiden').siblings().addClass('hiden');
 
-  }
+        }
 
-      });
+    });
     // create slider of books on mobile screen 
 
     let rows = $('.books').children().length - 1;
@@ -175,5 +174,30 @@ $(document).ready(function() {
 
     let fileName = $('.upload input').val();
     console.log(fileName);
-});
+
+
+
+    let storyTitle = $('.storyDetail .detail .book h3').text();
+    console.log(storyTitle);
+    $('.storyDetail .container').find($('h1')).text(`${storyTitle}`);
+
+
+    $('.book .overflow .fa-heart').on('click', function() {
+
+        $(this).toggleClass('fas');
+    });
+
+
+
+    //change text of the books
+    bookText = $('.book h3');
+    console.log(bookText);
+    for (let bookTitle of bookText) {
+
+        $(bookTitle).text(`${$(bookTitle).text().slice(0,5)}...`);
+        console.log(bookTitle)
+    }
+
+
+
 });

@@ -419,62 +419,143 @@
                                     .questionContainer p.question i {
                                         font-size: 18px;
                                     }
-
-
-    .translationSec .container {
-        width: 96%;     
-        border-width: 5px;
-       
-    }
-    
-    .translationSec .container h1 {
-       
-        font-size: 18px;
-    }
-    
-    .translationSec .container h1:after {
-        width: 200px;
-     
-    }
-    
-    .translationSec .container form {
-       
-        width: 90%;
-        justify-content:center;
-        margin:10px auto 0px;
-    }
-    
-    .translationSec .container form>div {
-        width: 90%;
-    }
-    
- 
-   
-    
-    .translationSec .container form>div textarea {
-        height: 244px
-    }
-   
-    
-    
-    .translationSec .container form>div .upload p i {
-        font-size: 17px;
-    }
-    
-  
-    
-    .translationSec .container form input[type="submit"] {
-        width: 70%;
-        font-size: 19px;
-    
-    }
-
-
-
-
-
+                                    .translationSec .container {
+                                        width: 96%;
+                                        border-width: 5px;
+                                    }
+                                    .translationSec .container h1 {
+                                        font-size: 18px;
+                                    }
+                                    .translationSec .container h1:after {
+                                        width: 200px;
+                                    }
+                                    .translationSec .container form {
+                                        width: 90%;
+                                        justify-content: center;
+                                        margin: 10px auto 0px;
+                                    }
+                                    .translationSec .container form>div {
+                                        width: 90%;
+                                    }
+                                    .translationSec .container form>div textarea {
+                                        height: 244px
+                                    }
+                                    .translationSec .container form>div .upload p i {
+                                        font-size: 17px;
+                                    }
+                                    .translationSec .container form input[type="submit"] {
+                                        width: 70%;
+                                        font-size: 19px;
+                                    }
                                     *::selection {
                                         background-color: #fff
+                                    }
+                                    .storyDetail .container {
+                                        width: 96%;
+                                    }
+                                    .storyDetail .container h1 {
+                                        background: repeating-linear-gradient(-45deg, #dc864e, #faf5f1 85%);
+                                        width: 95%;
+                                        margin-bottom: 20px;
+                                        border-radius: 5px;
+                                    }
+                                    .storyDetail .container .detail .story {
+                                        width: 300px;
+                                    }
+                                    .storyDetail .container .detail {
+                                        display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;
+                                        width: 100%;
+                                        flex-direction: row;
+                                        padding: 20px 5px;
+                                        margin-bottom: 5px;
+                                    }
+                                    .storyDetail .container .detail .story .book {
+                                        height: 450px;
+                                    }
+                                    .storyDetail .container .detail .story .book .image {
+                                        height: 350px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails {
+                                        width: 85%;
+                                        height: 100%;
+                                        padding-left: 15px;
+                                        padding-right: 3%;
+                                        border: none;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-self: center;
+                                        flex-wrap: wrap;
+                                        margin-bottom: 35px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li {
+                                        margin-top: 30px;
+                                        font-size: 16px;
+                                        width: 100%;
+                                        text-align: center
+                                    }
+                                    .storyDetail .container .detail .bookdetails li span {
+                                        font-size: 18px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li:first-of-type {
+                                        margin-top: 0px;
+                                    }
+                                    .storyDetail .container .detail .description a:first-of-type {
+                                        margin-left: 0px
+                                    }
+                                    .storyDetail .container .detail .description {
+                                        width: 95%;
+                                        padding-left: 3%;
+                                        margin-left: 0%;
+                                        align-self: center;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: space-between;
+                                        border-top: 10px double #dc864e;
+                                        padding-top: 10%;
+                                    }
+                                    .storyDetail .container .detail .description h3 {
+                                        margin-bottom: 20px;
+                                        color: #592a20;
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .detail .description p {
+                                        width: 100%;
+                                        line-height: 36px;
+                                    }
+                                    .storyDetail .container .detail .description a {
+                                        width: 46%;
+                                        padding: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 20px 0px;
+                                    }
+                                    .storyDetail .container .anotherStories {
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .anotherStories .story {
+                                        width: 95%;
+                                        margin: 30px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        margin: auto;
+                                    }
+                                    .storyDetail .container .anotherStories .story .image {
+                                        height: 350px;
+                                    }
+                                    .storyDetail .container .anotherStories h2 {
+                                        margin: 20px;
+                                    }
+                                    .storyDetail .container .anotherStories .story .book {
+                                        width: 250px;
+                                        margin: 10px;
                                     }
                                 }
                                 
@@ -557,6 +638,9 @@
                                     .questionContainer p.question i {
                                         font-size: 22px;
                                     }
+                                    .storyDetail .container .detail .story .book .image {
+                                        height: 350px;
+                                    }
                                 }
                                 
                                 @media(min-width:661px) and (max-width:767px) {
@@ -636,8 +720,6 @@
                                     .questionContainer p.question i {
                                         font-size: 22px;
                                     }
-
-                                    
                                 }
                                 
                                 @media (max-width:320px) {
@@ -1092,50 +1174,131 @@
                                     .questionContainer p.question i {
                                         font-size: 23px;
                                     }
-                                    
-
-    .translationSec .container {
-        width: 95%;     
-        border-width: 7px;
-       
-    }
-    
-    .translationSec .container h1 {
-       
-        font-size: 22px;
-    }
-    
-    .translationSec .container h1:after {
-        width: 270px;
-     
-    }
-    
-    .translationSec .container form {
-       
-        width: 90%;
-        justify-content:space-between;
-        margin:20px auto 0px;
-    }
-    
-    .translationSec .container form>div {
-        width: 45%;
-    }
-    
-    
-    
-    .translationSec .container form>div .upload p i {
-        font-size: 19px;
-    }
-    
-  
-    
-    .translationSec .container form input[type="submit"] {
-        width: 60%;
-        font-size: 19px;
-    
-    }
-
-
+                                    .translationSec .container {
+                                        width: 95%;
+                                        border-width: 7px;
+                                    }
+                                    .translationSec .container h1 {
+                                        font-size: 22px;
+                                    }
+                                    .translationSec .container h1:after {
+                                        width: 270px;
+                                    }
+                                    .translationSec .container form {
+                                        width: 90%;
+                                        justify-content: space-between;
+                                        margin: 20px auto 0px;
+                                    }
+                                    .translationSec .container form>div {
+                                        width: 45%;
+                                    }
+                                    .translationSec .container form>div .upload p i {
+                                        font-size: 19px;
+                                    }
+                                    .translationSec .container form input[type="submit"] {
+                                        width: 60%;
+                                        font-size: 19px;
+                                    }
+                                    .storyDetail .container {
+                                        display: flex;
+                                        width: 90%;
+                                        padding: 20px 0px;
+                                        border: 10px double #dc864e;
+                                        margin: auto;
+                                        border-width: 0px 10px;
+                                        flex-direction: column;
+                                    }
+                                    .storyDetail .container h1 {
+                                        background: repeating-linear-gradient(-45deg, #dc864e, #faf5f1 90%);
+                                        width: 95%;
+                                        margin-bottom: 20px;
+                                        border-radius: 5px;
+                                    }
+                                    .storyDetail .container .detail {
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .storyDetail .container .detail .story {
+                                        width: 35%;
+                                    }
+                                    .storyDetail .container .detail .story .book {
+                                        height: 90%;
+                                    }
+                                    .storyDetail .container .detail .story .book .image {
+                                        height: 300px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails {
+                                        width: 55%;
+                                        height: 100%;
+                                        padding-left: 15px;
+                                        padding-right: 10%;
+                                        border: none;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li {
+                                        margin-top: 30px;
+                                        font-size: 18px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li span {
+                                        font-size: 22px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li:first-of-type {
+                                        margin-top: 0px;
+                                    }
+                                    .storyDetail .container .detail .description a:first-of-type {
+                                        margin-left: 0px
+                                    }
+                                    .storyDetail .container .detail .description {
+                                        width: 85%;
+                                        padding-left: 0%;
+                                        margin-left: 0%;
+                                        align-self: center;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: space-between;
+                                        border-top: 10px double #dc864e;
+                                        padding-top: 10%;
+                                    }
+                                    .storyDetail .container .detail .description h3 {
+                                        margin-bottom: 20px;
+                                        color: #592a20;
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .detail .description p {
+                                        width: 100%;
+                                        line-height: 36px;
+                                    }
+                                    .storyDetail .container .detail .description a {
+                                        width: 46%;
+                                        padding: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 20px 0px;
+                                    }
+                                    .storyDetail .container .anotherStories {
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .anotherStories .story {
+                                        width: 95%;
+                                        margin: 30px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        margin: auto;
+                                    }
+                                    .storyDetail .container .anotherStories .story .image {
+                                        height: 250px;
+                                    }
+                                    .storyDetail .container .anotherStories h2 {
+                                        margin: 20px;
+                                    }
+                                    .storyDetail .container .anotherStories .story .book {
+                                        width: 200px;
+                                        margin: 10px;
+                                    }
                                 }
                                 
                                 @media (min-width:992px) and (max-width:1999px) {
@@ -1460,49 +1623,124 @@
                                     .questionContainer p.question i {
                                         font-size: 26px;
                                     }
-
-                                        .translationSec .container {
-        width: 86%;     
-        border-width: 10px;
-       
-    }
-    
-    .translationSec .container h1 {
-       
-        font-size: 26px;
-    }
-    
-    .translationSec .container h1:after {
-        width: 320px;
-     
-    }
-    
-    .translationSec .container form {
-       
-        width: 90%;
-        justify-content:space-between;
-        margin:20px auto 0px;
-    }
-    
-    .translationSec .container form>div {
-        width: 45%;
-    }
-    
-    
-    
-    .translationSec .container form>div .upload p i {
-        font-size: 21px;
-    }
-    
-  
-    
-    .translationSec .container form input[type="submit"] {
-        width: 60%;
-        font-size: 19px;
-    
-    }
-
-
+                                    .translationSec .container {
+                                        width: 86%;
+                                        border-width: 10px;
+                                    }
+                                    .translationSec .container h1 {
+                                        font-size: 26px;
+                                    }
+                                    .translationSec .container h1:after {
+                                        width: 320px;
+                                    }
+                                    .translationSec .container form {
+                                        width: 90%;
+                                        justify-content: space-between;
+                                        margin: 20px auto 0px;
+                                    }
+                                    .translationSec .container form>div {
+                                        width: 45%;
+                                    }
+                                    .translationSec .container form>div .upload p i {
+                                        font-size: 21px;
+                                    }
+                                    .translationSec .container form input[type="submit"] {
+                                        width: 60%;
+                                        font-size: 19px;
+                                    }
+                                    .storyDetail .container {
+                                        display: flex;
+                                        width: 96%;
+                                        padding: 20px 0px;
+                                        border: 10px double #dc864e;
+                                        margin: auto;
+                                        border-width: 0px 10px;
+                                        flex-direction: column;
+                                    }
+                                    .storyDetail .container h1 {
+                                        background: repeating-linear-gradient(-45deg, #dc864e, #faf5f1 90%);
+                                        width: 95%;
+                                        margin-bottom: 20px;
+                                        border-radius: 5px;
+                                    }
+                                    .storyDetail .container .detail .story {
+                                        width: 25%;
+                                    }
+                                    .storyDetail .container .detail .story .book {
+                                        height: 94%;
+                                    }
+                                    .storyDetail .container .detail .story .book .image {
+                                        height: 300px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails {
+                                        width: 35%;
+                                        height: 100%;
+                                        padding-left: 15px;
+                                        padding-right: 10%;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li {
+                                        margin-top: 30px;
+                                        font-size: 18px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li span {
+                                        font-size: 22px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li:first-of-type {
+                                        margin-top: 0px;
+                                    }
+                                    .storyDetail .container .detail .description a:first-of-type {
+                                        margin-left: 0px
+                                    }
+                                    .storyDetail .container .detail .description {
+                                        width: 35%;
+                                        padding-left: 7%;
+                                        margin-left: 0%;
+                                        align-self: center;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: space-between;
+                                    }
+                                    .storyDetail .container .detail .description h3 {
+                                        margin-bottom: 20px;
+                                        color: #592a20;
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .detail .description p {
+                                        width: 100%;
+                                        line-height: 36px;
+                                    }
+                                    .storyDetail .container .detail .description a {
+                                        width: 46%;
+                                        padding: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 20px 0px;
+                                    }
+                                    .storyDetail .container .anotherStories {
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .anotherStories .story {
+                                        width: 95%;
+                                        margin: 30px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        margin: auto;
+                                    }
+                                    .storyDetail .container .anotherStories .story .image {
+                                        height: 250px;
+                                    }
+                                    .storyDetail .container .anotherStories h2 {
+                                        margin: 20px;
+                                    }
+                                    .storyDetail .container .anotherStories .story .book {
+                                        width: 200px;
+                                        margin: 10px;
+                                    }
                                 }
                                 
                                 @media(min-width:1200px) {
@@ -1750,47 +1988,133 @@
                                     .questionContainer p.question i {
                                         font-size: 34px;
                                     }
-
-                                        .translationSec .container {
-        width: 75%;     
-        border-width: 10px;
-       
-    }
-    
-    .translationSec .container h1 {
-       
-        font-size: 36px;
-    }
-    
-    .translationSec .container h1:after {
-        width: 340px;
-     
-    }
-    
-    .translationSec .container form {
-       
-        width: 90%;
-        justify-content:space-between;
-        margin:20px auto 0px;
-    }
-    
-    .translationSec .container form>div {
-        width: 45%;
-    }
-    
-    
-    
-    .translationSec .container form>div .upload p i {
-        font-size: 23px;
-    }
-    
-  
-    
-    .translationSec .container form input[type="submit"] {
-        width: 50%;
-        font-size: 23px;
-    
-    }
-
-
+                                    .translationSec .container {
+                                        width: 75%;
+                                        border-width: 10px;
+                                    }
+                                    .translationSec .container h1 {
+                                        font-size: 36px;
+                                    }
+                                    .translationSec .container h1:after {
+                                        width: 340px;
+                                    }
+                                    .translationSec .container form {
+                                        width: 90%;
+                                        justify-content: space-between;
+                                        margin: 20px auto 0px;
+                                    }
+                                    .translationSec .container form>div {
+                                        width: 45%;
+                                    }
+                                    .translationSec .container form>div .upload p i {
+                                        font-size: 23px;
+                                    }
+                                    .translationSec .container form input[type="submit"] {
+                                        width: 50%;
+                                        font-size: 23px;
+                                    }
+                                    .storyDetail {
+                                        background: url(../images/slider.png)no-repeat fixed 0% 0%;
+                                    }
+                                    .storyDetail .container {
+                                        display: flex;
+                                        width: 80%;
+                                        padding: 20px 0px;
+                                        border: 10px double #dc864e;
+                                        margin: auto;
+                                        border-width: 0px 10px;
+                                        flex-direction: column;
+                                    }
+                                    .storyDetail .container h1 {
+                                        background: repeating-linear-gradient(-45deg, #dc864e, #faf5f1 90%);
+                                        width: 95%;
+                                        margin-bottom: 20px;
+                                        border-radius: 5px;
+                                    }
+                                    .storyDetail .container .detail {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        margin: 30px auto;
+                                        padding: 20px 30px
+                                    }
+                                    .storyDetail .container .detail .story {
+                                        width: 20%;
+                                    }
+                                    .storyDetail .container .detail .story .book {
+                                        height: 92%;
+                                    }
+                                    .storyDetail .container .detail .story .book .image {
+                                        height: 300px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails {
+                                        width: 33%;
+                                        height: 100%;
+                                        padding-left: 15px;
+                                        padding-right: 3%;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li {
+                                        margin-top: 30px;
+                                        font-size: 18px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li span {
+                                        font-size: 22px;
+                                    }
+                                    .storyDetail .container .detail .bookdetails li:first-of-type {
+                                        margin-top: 0px;
+                                    }
+                                    .storyDetail .container .detail .description a:first-of-type {
+                                        margin-left: 0px
+                                    }
+                                    .storyDetail .container .detail .description {
+                                        width: 46%;
+                                        margin-left: 0%;
+                                        padding-left: 10%;
+                                        align-self: center;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: space-between;
+                                    }
+                                    .storyDetail .container .detail .description h3 {
+                                        margin-bottom: 20px;
+                                        color: #592a20;
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .detail .description p {
+                                        width: 100%;
+                                        line-height: 36px;
+                                    }
+                                    .storyDetail .container .detail .description a {
+                                        width: 46%;
+                                        padding: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 20px 0px;
+                                    }
+                                    .storyDetail .container .anotherStories {
+                                        width: 100%;
+                                    }
+                                    .storyDetail .container .anotherStories .story {
+                                        width: 95%;
+                                        margin: 30px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        margin: auto;
+                                    }
+                                    .storyDetail .container .anotherStories .story .image {
+                                        height: 250px;
+                                    }
+                                    .storyDetail .container .anotherStories h2 {
+                                        margin: 20px;
+                                    }
+                                    .storyDetail .container .anotherStories .story .book {
+                                        width: 200px;
+                                        margin: 10px;
+                                    }
                                 }
