@@ -176,7 +176,6 @@ $(document).ready(function() {
     console.log(fileName);
 
 
-
     let storyTitle = $('.storyDetail .detail .book h3').text();
     console.log(storyTitle);
     $('.storyDetail .container').find($('h1')).text(`${storyTitle}`);
