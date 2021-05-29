@@ -2418,3 +2418,12 @@
                     text-decoration:none;
 
                 }
+
+
+                .rightProfileBox li i
+                {
+                    font-size:19px;
+                    color: #dc864e;
+                    padding-right:10px;
+                    display:inline-flex;
+                }
