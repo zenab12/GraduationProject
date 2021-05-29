@@ -785,10 +785,9 @@
     
           .rightProfileBox {
        
-        right: -300px;
-        width:300px;
+  
         top:74.2px;
-        z-index:9999
+    
     }
 
   
@@ -1061,6 +1060,7 @@ ul.navLinks li.services li.active{
     .questionContainer p.question i {
         font-size: 22px;
     }
+
 }
 
 @media (max-width:320px) {
@@ -1075,6 +1075,8 @@ ul.navLinks li.services li.active{
         padding: 6px 5px;
         border-width: 3px;
     }
+    
+ 
 }
 
 @media (max-width:280px) {
@@ -1859,10 +1861,9 @@ ul.navLinks li.services li.active{
     
           .rightProfileBox {
        
-        right: -300px;
-        width:300px;
+      
         top:93.8px;
-        z-index:9999
+     
     }
 
   
@@ -2639,10 +2640,9 @@ background:#faf5f1;
 
           .rightProfileBox {
        
-        right: -300px;
-        width:300px;
+ 
         top:86px;
-        z-index:9999
+  
     }
 
   
@@ -3370,11 +3370,9 @@ background:#faf5f1;
     
 
       .rightProfileBox {
-       
-        right: -300px;
-        width:300px;
+    
         top:88px;
-        z-index:9999
+
     }
 
   

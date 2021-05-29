@@ -2236,11 +2236,11 @@
     
     .rightProfileBox {
         background: #592a20;
-
         position: absolute;
-        right: -300px;
+        right: 0px;
         width:300px;
         top:75px;
+        display:none;
         z-index:9999
     }
 

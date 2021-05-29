@@ -225,19 +225,24 @@ $(document).ready(function() {
 
           let Box = $('.rightProfileBox');
 
-          Box.toggleClass('visible')
-
+           Box.slideToggle(1000);
+/*
 if(Box.hasClass('visible')){
                Box.animate({
 
-              right: '0px'},'slow');
+                right: '-300px'},'slow');
+                Box.css('overflow','hidden');
+                                Box.css('display','none');
+
+
+
 
 } else {
      Box.animate({
 
-              right: '-300px'},'slow');
-
+              right: '0px'},'slow');
 }
+*/
 
 });
 
