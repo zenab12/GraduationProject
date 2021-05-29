@@ -163,7 +163,7 @@ $(document).ready(function() {
 
     });
 
-    $('.upload input').on('change', function() {
+    $('.translationSec .upload input').on('change', function() {
 
 
         let fileName = $(this).val();
@@ -196,6 +196,57 @@ $(document).ready(function() {
         $(bookTitle).text(`${$(bookTitle).text().slice(0,5)}...`);
         console.log(bookTitle)
     }
+
+
+
+    $('.rightProfileBox .upload input').on('change', function() {
+
+
+        let profileInput = $(this);
+        let profilePhotoVal = profileInput.val();
+        let profilePhotoList = profilePhotoVal.split("\\");
+        profileInput.attr('value', `${profilePhotoVal}`);
+        let profilePhoto = profilePhotoList[profilePhotoList.length - 1];
+        console.log(profilePhotoList);
+
+        $(this).parent().parent().find('img').attr('src', `./images/${profilePhoto}`)
+
+        $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `./images/${profilePhoto}`)
+    });
+
+
+
+
+
+    $('nav .navIcons .userIcon').on('click', function(e) {
+           
+          e.stopPropagation(); 
+          e.preventDefault();
+
+          let Box = $('.rightProfileBox');
+
+          Box.toggleClass('visible')
+
+if(Box.hasClass('visible')){
+               Box.animate({
+
+              right: '0px'},'slow');
+
+} else {
+     Box.animate({
+
+              right: '-300px'},'slow');
+
+}
+
+});
+
+
+$('ul.breadCrumb li.active a').on('click',function(e){
+
+    e.preventDefault();
+    e.stopPropagation();
+});
 
 
 
