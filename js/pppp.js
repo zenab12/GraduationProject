@@ -227,20 +227,11 @@ $(document).ready(function() {
 
         $(this).parent().parent().find('img').attr('src', `./images/${profilePhoto}`)
 
-        $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `./images/${profilePhoto}`);
+        $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${URL.createObjectURL(event.target.files[0])}`);
 
         if ($('body').width() <= 768) {
 
-            let profileInput = $('.rightProfileBox .upload input');
-            let profilePhotoVal = profileInput.val();
-            let profilePhotoList = profilePhotoVal.split("'\'");
-            profileInput.attr('value', `${profilePhotoVal}`);
-            let profilePhoto = profilePhotoList[profilePhotoList.length - 1];
-            console.log(profilePhotoList);
-
-            $(this).parent().parent().find('img').attr('src', `./images/${profilePhoto}`)
-
-            $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `./images/${profilePhoto}`);
+            $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${     URL.createObjectURL(event.target.files[0])}`);
 
         }
     });
