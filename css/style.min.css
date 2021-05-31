@@ -917,7 +917,7 @@ section.recentlyStories {
 }
 
 .bookShelf .container .btn {
-    background: repeating-linear-gradient(135deg, #DC864E 0px, #FAF5F1 580px);
+    background: repeating-linear-gradient(45deg, #dc864e, #faf5f1 94%);
     padding: 0px;
     width: 100%;
     text-align: center;
@@ -1100,6 +1100,10 @@ section.ourServices .container h3 {
     font-weight: 800;
 }
 
+section.mainSlider .container h1 {
+    margin: 70px 0px 10px;
+}
+
 section.ourServices .container h2,
 section.ourServices .container h3 {
     text-align: center;
@@ -1170,9 +1174,22 @@ section.ourServices .container a {
     font-weight: 500;
 }
 
+section.mainSlider .container .btns a {
+    padding: 12px 0px
+}
+
+section.ourServices .container a {
+    background: #592A20;
+    border: none;
+    padding: 15px
+}
+
+section.mainSlider .container .btns a {
+    border: none;
+}
+
 section.mainSlider .container .btns a:first-of-type {
     color: #DC864E;
-    border: 5px double #faf5f1;
     background: repeating-linear-gradient(-135deg, #FAF5F1 0px, #DC864E 180px);
     background: #faf5f1;
 }
@@ -1279,7 +1296,8 @@ section.ourServices .container h3 {
 section.ourServices .container a {
     width: 50%;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 4px;
     font-size: 20px;
     margin: 25px auto;
     text-align: center;
@@ -1627,7 +1645,7 @@ section.recentlyStories .container .row.active {
     box-shadow: 0px 0px 3px 1px #dc864e;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .storyDetail {
@@ -1653,6 +1671,8 @@ section.recentlyStories .container .row.active {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #dc864e;
+    box-shadow: 2px 2px 10px 2px #DC864E;
+    text-shadow: .5px .5px 1px #592A20;
 }
 
 .storyDetail .container .detail {
@@ -1991,19 +2011,25 @@ html {
     scroll-behavior: smooth
 }
 
-section.aboutSlider .container a {
-    position: relative
-}
-
-section.aboutSlider .container a i {
+section.aboutSlider .container a i,
+section.mainSlider .container a.chevDown i {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 27%;
     border: none;
     animation-name: slide-down;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    color: #dc864e;
+    font-size: 20px;
+    border-right: 0
+}
+
+section.mainSlider .container a.chevDown i {
+    border: none;
+    font-size: 20px;
+    left: 25%
 }
 
 @keyframes slide-down {
@@ -2042,19 +2068,13 @@ section.aboutSlider .container a i {
     }
 }
 
-section.aboutSlider .container i {
-    color: #dc864e;
-    font-size: 23px;
-    border: 1px solid #dc864e;
-    border-right: 0
-}
-
-section.aboutSlider .container a {
+section.aboutSlider .container a,
+section.mainSlider .container a.chevDown {
     display: inline-block;
     text-align: center;
     border: 4px double #dc864e;
     border-radius: 10px;
-    ;
+    position: relative;
     padding: 15px;
     margin-bottom: 5%;
     width: 50px;
@@ -2063,6 +2083,13 @@ section.aboutSlider .container a {
     overflow: hidden;
     scroll-behavior: smooth;
     margin-top: 5px
+}
+
+section.mainSlider .container a.chevDown {
+    margin-bottom: 1%;
+    padding: 5px;
+    width: 40px;
+    height: 40px
 }
 
 section.aboutSlider .container p {
@@ -2234,6 +2261,8 @@ section.sendFeedback .container form input {
     background: repeating-linear-gradient(45deg, #dc864e, #faf5f1 90%);
     font-size: 25px;
     color: #592a20;
+    box-shadow: 1px 1px 5px 1px #DC864E;
+    text-shadow: .5px .5px 1px #592A20;
     padding: 10px;
     border-radius: 4px;
     outline: none;
@@ -2417,7 +2446,7 @@ p {
     margin: auto;
     display: flex;
     position: absolute;
-    margin-top: -22%;
+    margin-top: -70px;
     background: rgba(243, 187, 134, 0);
 }
 
@@ -2539,4 +2568,47 @@ a {
 
 .container .books .book.activeStory h3 {
     font-weight: 600
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0px;
+    background: #592a20;
+    height: 7px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 1s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-right:before {
+    background: #592a20;
+    height: 7px;
+}
+
+.ourServices a.hvr-shutter-in-horizontal:before,
+.storyDetail .container .detail .description a:first-of-type.hvr-shutter-in-horizontal:before {
+    background: #DC864E;
+    border-radius: 4px;
+}
+
+.storyDetail .container .detail .description a:last-of-type.hvr-shutter-in-horizontal:before {
+    background: #faf5f1;
+    border-radius: 4px;
+}
+
+.storyDetail .container .detail .description a:first-of-type,
+.storyDetail .container .detail .description a:last-of-type {
+    background: #592a20;
+}
+
+.hvr-ripple-out:before,
+.hvr-ripple-in:before {
+    border-radius: 4px;
 }

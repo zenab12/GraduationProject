@@ -122,13 +122,14 @@ $(document).ready(function() {
 
 
     function flip() {
-        setInterval(() => {
+        setTimeout(() => {
             $('.recentlyStories .fa-chevron-right').click();
         }, 3000)
 
     }
 
     flip();
+
 
 
 
@@ -226,7 +227,22 @@ $(document).ready(function() {
 
         $(this).parent().parent().find('img').attr('src', `./images/${profilePhoto}`)
 
-        $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `./images/${profilePhoto}`)
+        $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `./images/${profilePhoto}`);
+
+        if ($('body').width() <= 768) {
+
+            let profileInput = $('.rightProfileBox .upload input');
+            let profilePhotoVal = profileInput.val();
+            let profilePhotoList = profilePhotoVal.split("'\'");
+            profileInput.attr('value', `${profilePhotoVal}`);
+            let profilePhoto = profilePhotoList[profilePhotoList.length - 1];
+            console.log(profilePhotoList);
+
+            $(this).parent().parent().find('img').attr('src', `./images/${profilePhoto}`)
+
+            $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `./images/${profilePhoto}`);
+
+        }
     });
 
 
@@ -273,6 +289,8 @@ $(document).ready(function() {
     for (let b = 0; b < $('.books').children().children().length; b++) {
         let book = $('.books').children().children()[b];
 
+        $(book).find($('.overflow a')).addClass('hvr-ripple-out')
+
         $(book).find('.rate').addClass('writer');
         $(book).find('ul').remove('ul.rate');
 
@@ -313,6 +331,9 @@ $(document).ready(function() {
     for (let b = 0; b < $('.allBooks').children().length; b++) {
         let book = $('.allBooks').children()[b];
 
+        $(book).find($('.overflow a')).addClass('hvr-ripple-out')
+
+
         $(book).find('.rate').addClass('writer');
         $(book).find('ul').remove('ul.rate');
 
@@ -346,80 +367,27 @@ $(document).ready(function() {
 
     }
 
+    for (let b = 0; b < $('.allBooks').children().length; b++) {
 
-    for (let b = 0; b < $('.story').children().length; b++) {
-        let book = $('.story').children()[b];
+        let book = $('.allBooks').children().find($('.overflow'))[b];
 
-        $(book).find('.rate').addClass('writer');
-        $(book).find('ul').remove('ul.rate');
-
-        let writerName = $("<p  class='writerName'> </p>").text('zenab mohamed');
-        let writen = $("<span></span>").text('writen by : ');
-
-        $(writerName).prepend(writen);
-        $(book).find($('.bookCaption')).append(writerName);
-
-
-        $(writerName).css({
-            'width': '100%',
-            'color': '#dc864e',
-            'font-size': '13px',
-            'font-family': " 'Work Sans', sans-serif",
-            'font-weight': '400',
-            'text-align': 'center',
-            'padding': '2px 0px 10px'
-        });
-
-        $(writen).css({
-            'color': '#592a20',
-            'font-size': '14px',
-
-            'font-weight': '500',
-
-
-
-        });
-
+        $(book).addClass('hvr-curl-top-right');
 
     }
-    /*
-
-        if ($('body').width() >= 768 && $('body').width() <= 992) {
 
 
-            //change text of the books
-            let Text = $('.allBooks .bookCaption p');
-            console.log(bookText);
-            for (let bookTitle of Text) {
 
-                $(bookTitle).text(`${$(bookTitle).text().slice(0,18)}...`);
-                console.log(bookTitle)
-            }
+    for (let b = 0; b < $('.mostRecently').children().children().length; b++) {
+        let book = $('.mostRecently').children().find($('.overflow'))[b];
+        $(book).addClass('hvr-curl-top-left');
 
-        }
-
-        
-
-            if ($('.books .book').hasClass('.activeStory') == true) {
+    }
 
 
-                //change text of the books
-                let Text = $('.book .activeStory h3');
 
 
-                for (let Title of Text) {
-
-                    $(Title).text(`${$(Title).text().slice(0,$(Text).length)}.`);
-                    console.log(Title);
-                }
-
-            }
-        */
 
 
-    console.log($('.activeStory h3').text());
 
-
-    console.log($('.book.activeStory').hasClass('activeStory'));
 
 });
