@@ -121,6 +121,16 @@ $(document).ready(function() {
     });
 
 
+    function flip() {
+        setInterval(() => {
+            $('.recentlyStories .fa-chevron-right').click();
+        }, 3000)
+
+    }
+
+    flip();
+
+
 
     for (let index = 0; index < $('.books').children().length; index++) {
 
@@ -189,12 +199,17 @@ $(document).ready(function() {
 
 
     //change text of the books
-    bookText = $('.book h3');
+    bookText = $('.slider .book h3');
     console.log(bookText);
+
     for (let bookTitle of bookText) {
 
+
         $(bookTitle).text(`${$(bookTitle).text().slice(0,5)}...`);
-        console.log(bookTitle)
+        console.log(bookTitle);
+
+
+
     }
 
 
@@ -219,40 +234,192 @@ $(document).ready(function() {
 
 
     $('nav .navIcons .userIcon').on('click', function(e) {
-           
-          e.stopPropagation(); 
-          e.preventDefault();
 
-          let Box = $('.rightProfileBox');
+        e.stopPropagation();
+        e.preventDefault();
 
-           Box.slideToggle(1000);
-/*
-if(Box.hasClass('visible')){
-               Box.animate({
+        let Box = $('.rightProfileBox');
 
-                right: '-300px'},'slow');
-                Box.css('overflow','hidden');
-                                Box.css('display','none');
+        Box.slideToggle(1000);
+        /*
+        if(Box.hasClass('visible')){
+                       Box.animate({
 
-
+                        right: '-300px'},'slow');
+                        Box.css('overflow','hidden');
+                                        Box.css('display','none');
 
 
-} else {
-     Box.animate({
-
-              right: '0px'},'slow');
-}
-*/
-
-});
 
 
-$('ul.breadCrumb li.active a').on('click',function(e){
+        } else {
+             Box.animate({
 
-    e.preventDefault();
-    e.stopPropagation();
-});
+                      right: '0px'},'slow');
+        }
+        */
+
+    });
 
 
+    $('ul.breadCrumb li.active a').on('click', function(e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+
+
+    for (let b = 0; b < $('.books').children().children().length; b++) {
+        let book = $('.books').children().children()[b];
+
+        $(book).find('.rate').addClass('writer');
+        $(book).find('ul').remove('ul.rate');
+
+        let writerName = $("<p  class='writerName'> </p>").text('zenab mohamed');
+        let writen = $("<span></span>").text('writen by : ');
+
+        $(writerName).prepend(writen);
+        $(book).find($('.bookCaption')).append(writerName);
+
+
+        $(writerName).css({
+            'width': '100%',
+            'color': '#dc864e',
+            'font-size': '13px',
+            'font-family': " 'Work Sans', sans-serif",
+            'font-weight': '400',
+            'text-align': 'center',
+            'padding': '2px 0px 10px'
+        });
+
+        $(writen).css({
+            'color': '#592a20',
+            'font-size': '14px',
+
+            'font-weight': '500',
+
+
+
+        });
+
+
+
+    }
+
+
+
+
+    for (let b = 0; b < $('.allBooks').children().length; b++) {
+        let book = $('.allBooks').children()[b];
+
+        $(book).find('.rate').addClass('writer');
+        $(book).find('ul').remove('ul.rate');
+
+        let writerName = $("<p  class='writerName'> </p>").text('zenab mohamed');
+        let writen = $("<span></span>").text('writen by : ');
+
+        $(writerName).prepend(writen);
+        $(book).find($('.bookCaption')).append(writerName);
+
+
+        $(writerName).css({
+            'width': '100%',
+            'color': '#dc864e',
+            'font-size': '13px',
+            'font-family': " 'Work Sans', sans-serif",
+            'font-weight': '400',
+            'text-align': 'center',
+            'padding': '2px 0px 10px'
+        });
+
+        $(writen).css({
+            'color': '#592a20',
+            'font-size': '14px',
+
+            'font-weight': '500',
+
+
+
+        });
+
+
+    }
+
+
+    for (let b = 0; b < $('.story').children().length; b++) {
+        let book = $('.story').children()[b];
+
+        $(book).find('.rate').addClass('writer');
+        $(book).find('ul').remove('ul.rate');
+
+        let writerName = $("<p  class='writerName'> </p>").text('zenab mohamed');
+        let writen = $("<span></span>").text('writen by : ');
+
+        $(writerName).prepend(writen);
+        $(book).find($('.bookCaption')).append(writerName);
+
+
+        $(writerName).css({
+            'width': '100%',
+            'color': '#dc864e',
+            'font-size': '13px',
+            'font-family': " 'Work Sans', sans-serif",
+            'font-weight': '400',
+            'text-align': 'center',
+            'padding': '2px 0px 10px'
+        });
+
+        $(writen).css({
+            'color': '#592a20',
+            'font-size': '14px',
+
+            'font-weight': '500',
+
+
+
+        });
+
+
+    }
+    /*
+
+        if ($('body').width() >= 768 && $('body').width() <= 992) {
+
+
+            //change text of the books
+            let Text = $('.allBooks .bookCaption p');
+            console.log(bookText);
+            for (let bookTitle of Text) {
+
+                $(bookTitle).text(`${$(bookTitle).text().slice(0,18)}...`);
+                console.log(bookTitle)
+            }
+
+        }
+
+        
+
+            if ($('.books .book').hasClass('.activeStory') == true) {
+
+
+                //change text of the books
+                let Text = $('.book .activeStory h3');
+
+
+                for (let Title of Text) {
+
+                    $(Title).text(`${$(Title).text().slice(0,$(Text).length)}.`);
+                    console.log(Title);
+                }
+
+            }
+        */
+
+
+    console.log($('.activeStory h3').text());
+
+
+    console.log($('.book.activeStory').hasClass('activeStory'));
 
 });

@@ -31,11 +31,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #592a20;;
+        background-color: #592a20;
+        ;
         text-align: left;
         align-items: flex-start;
-        border-top:1px solid #f5faf1;
-        margin-top:8px
+        border-top: 1px solid #f5faf1;
+        margin-top: 8px
     }
     ul.navLinks {
         display: flex
@@ -74,8 +75,8 @@
         width: 100%;
         position: static;
         display: flex;
-                background-color: #592a20;;
-
+        background-color: #592a20;
+        ;
     }
     .navLinks .servicesBox.hidden {
         display: none
@@ -83,12 +84,9 @@
     ul.navLinks li.services ul.servicesBox li a {
         padding-left: 0
     }
-
-
-        ul.navLinks li.services ul.servicesBox li:first-of-type 
-        {
-            border-top:1px solid #faf5f1
-        }
+    ul.navLinks li.services ul.servicesBox li:first-of-type {
+        border-top: 1px solid #faf5f1
+    }
     ul.navLinks li.services.active ul.servicesBox li:hover {
         background: rgba(133, 131, 131, .4);
         color: #707070
@@ -107,7 +105,6 @@
         margin-right: 0;
         padding: 8px 0;
         display: inline-block;
-       
     }
     nav .navIcons .Menu i {
         font-size: 20px
@@ -143,7 +140,7 @@
         order: 3
     }
     footer .contactus a {
-        margin-bottom: 20px
+        margin-bottom: 10px
     }
     footer .socialLinks {
         width: 100%;
@@ -151,10 +148,11 @@
     }
     footer h2,
     footer h3 {
-        font-size: 18px
+        font-size: 19px
     }
     footer h2 {
-        padding-top: 35px
+        padding-top: 35px;
+        line-height: 30px
     }
     footer h3 {
         font-size: 18px
@@ -162,15 +160,20 @@
     footer .contactus a,
     footer .links .footerLinks li a {
         width: 100%;
-        text-align: center
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row
     }
     footer .contactus a,
     footer .links .footerLinks li {
-        font-size: 16px;
+        font-size: 17px;
         width: 100%
     }
     footer .links .footerLinks li {
-        width: 28%;
+        width: 29%;
         margin-bottom: 15px
     }
     footer .links .footerLinks li.sign {
@@ -186,7 +189,6 @@
         width: 100%;
         order: 4;
         font-size: 16px;
-        padding-left: 10%
     }
     .Sign .submit label {
         font-size: 15px
@@ -244,7 +246,7 @@
         justify-content: center
     }
     .bookShelf .container .books .book .image {
-        height: 350px
+        height: 380px
     }
     .bookShelf .container h2 {
         background: repeating-linear-gradient( 45deg, #FAF5F1 50px, #DC864E);
@@ -267,8 +269,9 @@
         justify-content: space-between
     }
     .bookShelf .container .books .book {
-        width: 90%;
+        width: 300px;
         margin: auto;
+        height: 450px;
         margin-bottom: 50px
     }
     .bookShelf .container .controls {
@@ -302,12 +305,13 @@
     }
     section.mainSlider .container p,
     section.ourServices .container p {
-        font-size: 20px;
-        width: 75%;
+        font-size: 17px;
+        width: 85%;
         line-height: 37px;
     }
     section.ourServices .container p {
         font-size: 17px;
+        text-align: center
     }
     section.mainSlider .container .btns {
         width: 90%;
@@ -364,6 +368,7 @@
     section.recentlyStories .container h2 {
         width: 90%;
         font-size: 25px;
+        background: repeating-linear-gradient(-45deg, #DC864E, #FAF5F1 84%);
         border-radius: 4px;
     }
     section.recentlyStories .container .controls {
@@ -385,8 +390,8 @@
         height: 120px
     }
     section.recentlyStories .container .books .book h3 {
-        font-size: 15px;
-        text-align: left;
+        font-size: 20px;
+        text-align: center;
     }
     section.recentlyStories .container .books .book .rate {
         font-size: 10px
@@ -453,7 +458,7 @@
         font-size: 17px;
     }
     .translationSec .container form input[type="submit"] {
-        width: 70%;
+        width: 88%;
         font-size: 19px;
     }
     *::selection {
@@ -781,68 +786,38 @@
         background: repeating-linear-gradient(45deg, #dc864e, #faf5f1 94%);
         font-size: 20px;
     }
-
-    
-          .rightProfileBox {
-       
-  
-        top:74.2px;
-    
+    .rightProfileBox {
+        top: 73.2px;
+        width: 100%
     }
-
-  
     .rightProfileBox ul {
-
         padding: 35px 10px;
     }
-    
     .rightProfileBox ul li.image {
         width: 80%;
-       
     }
-    
     .rightProfileBox ul li.image img {
         width: 70px;
         height: 70px;
- 
-
     }
-    
     .rightProfileBox ul li a {
-      
         font-size: 20px;
     }
-    
     .rightProfileBox ul li {
         margin-bottom: 4px;
         padding: 0px 10px;
     }
-    
     .rightProfileBox ul li.image p {
         font-size: 22px;
         margin: 15px;
-       
     }
-    
     .rightProfileBox ul li p {
         margin: 10px 0px;
         font-size: 22px;
     }
-    
     .rightProfileBox ul li.image p.adding {
         font-size: 30px;
-        padding: 1px 4px;
-        text-align: center;
-        width: 100%;
-        color: #faf5f1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        cursor: pointer;
-        z-index: 1;
     }
-
-   
     .navIcons img {
         width: 44px;
         height: 44px;
@@ -851,48 +826,51 @@
         margin-bottom: 0px;
         background: transparent;
     }
-    
     .navIcons a.userIcon {
         background-color: transparent;
-        padding:10px 0px 50px;
+        padding: 10px 0px 50px;
         width: 60px;
         height: 45px;
-        border:none;
-        display:flex;
+        border: none;
+        display: flex;
     }
-
-     nav .navIcons {
-        width:40%;
-        display:flex;
-        align-items:flex-start;
-        margin:0px;
-        justify-content:space-evenly;
+    nav .navIcons {
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        margin: 0px;
+        justify-content: space-evenly;
     }
-
     nav .navIcons a {
-        width:47%;
+        width: 47%;
     }
-
-
-    .logo 
-    {width:60%}
-    nav .navIcons .Menu
-    {
-        margin-top:12px;
-        height:39px;
+    .logo {
+        width: 60%
     }
-
-    body{
-        overflow-x:hidden
+    nav .navIcons .Menu {
+        margin-top: 12px;
+        height: 39px;
     }
-ul.navLinks li.services li.active{
-
-    background: #faf5f1;
-    color:#592a20;    }
-
-    ul.navLinks li.services li.active a 
-    {
-        color:#592a20;  
+    body {
+        overflow-x: hidden
+    }
+    ul.navLinks li.services li.active {
+        background: #faf5f1;
+        color: #592a20;
+    }
+    ul.navLinks li.services li.active a {
+        color: #592a20;
+    }
+    footer .copyRight2 {
+        display: flex;
+        order: 3;
+        font-size: 16px;
+        text-align: center;
+        justify-content: center;
+        line-height: 30px;
+    }
+    footer .copyRight {
+        display: none;
     }
 }
 
@@ -900,18 +878,14 @@ ul.navLinks li.services li.active{
     footer h2 {
         font-size: 21px
     }
-    footer .links .footerLinks {
-        padding-left: 50px
-    }
     footer .links .footerLinks li {
-        width: 32%;
+        width: 29%;
         margin-bottom: 15px
     }
-    footer .copyRight {
+    footer .copyRight2 {
         width: 100%;
         order: 4;
         font-size: 17px;
-        padding-left: 18%
     }
     .Sign .submit label {
         width: 50%
@@ -930,8 +904,13 @@ ul.navLinks li.services li.active{
     .bookShelf .container .books .book .image {
         height: 460px
     }
+    .bookShelf .container .books .book .image .overflow a {
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+    }
     .bookShelf .container .books .book {
-        width: 80%
+        width: 300px;
     }
     section.recentlyStories .container .books {
         position: relative;
@@ -978,9 +957,6 @@ ul.navLinks li.services li.active{
     .storyDetail .container .detail .story .book .image {
         height: 350px;
     }
-
-
-
 }
 
 @media(min-width:661px) and (max-width:767px) {
@@ -992,9 +968,12 @@ ul.navLinks li.services li.active{
     }
     footer .links .footerLinks li {
         width: 32%;
-        margin-bottom: 15px
+        margin-bottom: 15px;
     }
-    footer .copyRight {
+    footer .links .footerLinks li a {
+        justify-content: flex-start
+    }
+    footer .copyRigh2 {
         width: 100%;
         order: 4;
         font-size: 17px;
@@ -1018,9 +997,17 @@ ul.navLinks li.services li.active{
         margin: 10px 0px;
         box-shadow: .5px .5px 9px .5px #dc864e;
     }
+    .bookShelf .container .books .book .image .overflow a {
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+    }
     section.recentlyStories .container .books {
         position: relative;
         width: 90%;
+    }
+    .bookShelf .container .books {
+        width: 58%
     }
     section.recentlyStories .container .controls {
         padding: 0px 8px;
@@ -1032,9 +1019,9 @@ ul.navLinks li.services li.active{
         font-size: 10px
     }
     section.recentlyStories .container .books .book .image .overflow a {
-        width: 25px;
-        height: 25px;
-        font-size: 15px;
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
     }
     section.recentlyStories .container .books .book {
         width: 130px;
@@ -1060,7 +1047,6 @@ ul.navLinks li.services li.active{
     .questionContainer p.question i {
         font-size: 22px;
     }
-
 }
 
 @media (max-width:320px) {
@@ -1068,15 +1054,12 @@ ul.navLinks li.services li.active{
         width: 100%;
         order: 4;
         font-size: 16px;
-        padding-left: 1%
     }
     .bookShelf .container .controls i {
         font-size: 18px;
         padding: 6px 5px;
         border-width: 3px;
     }
-    
- 
 }
 
 @media (max-width:280px) {
@@ -1179,6 +1162,12 @@ ul.navLinks li.services li.active{
         justify-content: center;
         align-items: center
     }
+    footer .copyRight {
+        display: flex;
+    }
+    footer .copyRight2 {
+        display: none;
+    }
     ul.navLinks li.sign {
         display: none
     }
@@ -1207,7 +1196,6 @@ ul.navLinks li.services li.active{
     ul.servicesBox {
         width: 100%;
         top: 83.5px;
-        background:;
         width: 250px;
         left: -2px
     }
@@ -1270,10 +1258,13 @@ ul.navLinks li.services li.active{
         font-size: 18px
     }
     footer h2 {
+        font-size: 21px
+    }
+    footer h2 {
         padding-top: 35px
     }
     footer h3 {
-        font-size: 18px
+        font-size: 20px
     }
     footer .contactus a,
     footer .links .footerLinks li a {
@@ -1281,7 +1272,7 @@ ul.navLinks li.services li.active{
     }
     footer .contactus a,
     footer .links .footerLinks li {
-        font-size: 18px
+        font-size: 17px
     }
     .socialLinks ul {
         width: 50%
@@ -1292,7 +1283,6 @@ ul.navLinks li.services li.active{
     footer .copyRight {
         width: 100%;
         font-size: 18px;
-        padding-left: 23%
     }
     .Sign .submit label {
         width: 26%;
@@ -1403,9 +1393,13 @@ ul.navLinks li.services li.active{
     }
     section.mainSlider .container p,
     section.ourServices .container p {
-        font-size: 20px;
+        font-size: 17px;
         width: 75%;
         line-height: 37px;
+    }
+    section.mainSlider .container p {
+        width: 90%;
+        font-size: 20px
     }
     section.ourServices .container p {
         font-size: 17px;
@@ -1450,7 +1444,7 @@ ul.navLinks li.services li.active{
         font-size: 20px;
     }
     section.ourServices .container a {
-        width: 85%;
+        width: 78%;
         display: inline-block;
         padding: 5px;
         font-size: 17px;
@@ -1462,7 +1456,7 @@ ul.navLinks li.services li.active{
     }
     section.recentlyStories .container h2 {
         width: 90%;
-        font-size: 25px;
+        font-size: 30px;
         border-radius: 4px;
     }
     section.recentlyStories .container .controls {
@@ -1489,9 +1483,9 @@ ul.navLinks li.services li.active{
         font-size: 15px
     }
     section.recentlyStories .container .books .book .image .overflow a {
-        width: 25px;
-        height: 25px;
-        font-size: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
     }
     section.recentlyStories .container .books .book {
         width: 180px;
@@ -1506,7 +1500,7 @@ ul.navLinks li.services li.active{
         width: 90%;
     }
     .questionsSection .container h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
     .questionContainer {
         width: 100%;
@@ -1653,22 +1647,23 @@ ul.navLinks li.services li.active{
         background-size: cover;
     }
     section.aboutSlider h1 {
-        padding-top: 60px;
+        padding-top: 15px;
         padding-bottom: 2px;
         font-size: 40px;
-        margin-bottom: 20px;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 5px;
     }
     section.aboutSlider .container {
         width: 100%;
-        height: 50%;
-        background: transparent;
+        height: 60%;
         margin: 0px;
         border: none;
-        top: 30%;
+        top: 40%;
     }
     section.aboutSlider .container a i {
         top: 50%;
-        left: 30%;
+        left: 26%;
     }
     section.aboutSlider .container i {
         font-size: 23px;
@@ -1676,17 +1671,17 @@ ul.navLinks li.services li.active{
     }
     section.aboutSlider .container a {
         border-radius: 10px;
-        padding: 18px;
-        margin-bottom: 5%;
-        width: 50px;
-        height: 50px;
-        margin-top: 5%;
+        padding: 15px;
+        margin-bottom: 7%;
+        width: 30px;
+        height: 30px;
+        margin-top: 1%;
     }
     section.aboutSlider .container p {
         font-size: 20px;
-        width: 80%;
+        width: 97%;
         text-align: center;
-        margin-bottom: 10px
+        margin-bottom: 3px
     }
     section.whyus .container {
         width: 80%;
@@ -1789,7 +1784,7 @@ ul.navLinks li.services li.active{
         font-size: 16px;
     }
     section.feedback .container p {
-        line-height: 35px;
+        line-height: 30px;
         font-size: 15px;
     }
     .profile form .userImages {
@@ -1857,68 +1852,37 @@ ul.navLinks li.services li.active{
         background: repeating-linear-gradient(45deg, #dc864e, #faf5f1 94%);
         font-size: 20px;
     }
-
-    
-          .rightProfileBox {
-       
-      
-        top:93.8px;
-     
+    .rightProfileBox {
+        top: 93.8px;
     }
-
-  
     .rightProfileBox ul {
-
         padding: 35px 10px;
     }
-    
     .rightProfileBox ul li.image {
         width: 80%;
-       
     }
-    
     .rightProfileBox ul li.image img {
         width: 70px;
         height: 70px;
- 
-
     }
-    
     .rightProfileBox ul li a {
-      
         font-size: 20px;
     }
-    
     .rightProfileBox ul li {
         margin-bottom: 4px;
         padding: 0px 10px;
     }
-    
     .rightProfileBox ul li.image p {
         font-size: 22px;
         margin: 15px;
-       
     }
-    
     .rightProfileBox ul li p {
         margin: 10px 0px;
         font-size: 22px;
     }
-    
     .rightProfileBox ul li.image p.adding {
         font-size: 30px;
-        padding: 1px 4px;
-        text-align: center;
-        width: 100%;
-        color: #faf5f1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        cursor: pointer;
-        z-index: 1;
     }
-
-   
     .navIcons img {
         width: 43px;
         height: 43px;
@@ -1927,65 +1891,53 @@ ul.navLinks li.services li.active{
         margin-bottom: 0px;
         background: transparent;
     }
-    
     .navIcons a.userIcon {
         background-color: transparent;
-        padding:2.5px;
+        padding: 2.5px;
         width: 60px;
         height: 45px;
-        border:none;
-        display:flex;
+        border: none;
+        display: flex;
     }
-
-      
     ul.servicesBox {
-   
         top: 82.9px;
-
     }
-
-       ul.navLinks > li.active a
-    {
-        color:#592a20;
-        font-weight:bold
+    ul.navLinks>li.active a {
+        color: #592a20;
     }
-
-    
-    ul.navLinks >li.active a
-    {
-        color:#592a20;
-        font-weight:bold
+    ul.navLinks>li.active a {
+        color: #592a20;
     }
-      ul.navLinks >li.active .servicesBox a
-    {
-        color:#faf5f1;
-        font-weight:bold
+    ul.navLinks>li.active .servicesBox a {
+        color: #faf5f1;
     }
-
-          ul.navLinks >li.active .servicesBox li.active 
-          {
-                      color:#592a20;
-background:#faf5f1;
-          }
-
-                    ul.navLinks >li.active .servicesBox li.active  a {
-                                              color:#592a20;
-
-                    }
-
-                        ul.navLinks li.services.active ul.servicesBox li:hover {
+    ul.navLinks>li.active .servicesBox li.active {
+        color: #592a20;
+        background: #faf5f1;
+    }
+    ul.navLinks>li.active .servicesBox li.active a {
+        color: #592a20;
+    }
+    ul.navLinks li.services.active ul.servicesBox li:hover {
         background: rgba(133, 131, 131, .4);
         color: #707070
     }
     ul.navLinks li.services ul.servicesBox li:hover a {
         color: #707070
     }
-         ul.navLinks .servicesBox li:hover
-                    {
-                                background: rgba(133, 131, 131, .4);
-
-                    }
-
+    ul.navLinks .servicesBox li:hover {
+        background: rgba(133, 131, 131, .4);
+    }
+    footer .links,
+    footer .contactus {
+        margin-top: -100px;
+    }
+    footer .links {
+        margin-top: -124px;
+    }
+    footer .socialLinks {
+        margin-top: 35px
+    }
 }
 
 @media (min-width:992px) and (max-width:1999px) {
@@ -1994,7 +1946,6 @@ background:#faf5f1;
         width: 100%;
         padding: 10px 0 0
     }
-
     nav form {
         width: 28%;
         display: flex;
@@ -2053,9 +2004,6 @@ background:#faf5f1;
     footer .links {
         width: 10%
     }
-    footer .links h3 {
-        padding-top: 60px
-    }
     footer .links ul {
         width: 100%
     }
@@ -2068,9 +2016,6 @@ background:#faf5f1;
     footer h2,
     footer h3 {
         font-size: 25px
-    }
-    footer h2 {
-        padding-top: 35px
     }
     footer h3 {
         font-size: 20px
@@ -2092,7 +2037,7 @@ background:#faf5f1;
     footer .copyRight {
         width: 100%;
         font-size: 21px;
-        padding-left: 28%
+        justify-content: center;
     }
     .Sign .submit label {
         width: 26%;
@@ -2187,14 +2132,14 @@ background:#faf5f1;
         width: 100%;
     }
     section.ourServices .container h3 {
-        font-size: 35px;
+        font-size: 30px;
         text-align: left;
         width: 85%
     }
     section.mainSlider .container p,
     section.ourServices .container p {
         font-size: 25px;
-        width: 75%;
+        width: 77%;
         line-height: 45px;
     }
     section.mainSlider .container .btns {
@@ -2235,7 +2180,7 @@ background:#faf5f1;
         padding: 10px 3px;
     }
     .ourServices .container>div .caption p {
-        font-size: 30px;
+        font-size: 24px;
         width: 85%
     }
     section.ourServices .container a {
@@ -2251,7 +2196,7 @@ background:#faf5f1;
     }
     section.recentlyStories .container h2 {
         width: 90%;
-        font-size: 30px;
+        font-size: 40px;
         border-radius: 4px;
     }
     section.recentlyStories .container .controls {
@@ -2278,9 +2223,9 @@ background:#faf5f1;
         font-size: 18px
     }
     section.recentlyStories .container .books .book .image .overflow a {
-        width: 35px;
-        height: 35px;
-        font-size: 23px;
+        width: 46px;
+        height: 46px;
+        font-size: 33px;
     }
     section.recentlyStories .container .books .book {
         width: 230px;
@@ -2302,10 +2247,10 @@ background:#faf5f1;
     }
     .questionContainer p.Answer {
         line-height: 35px;
-        font-size: 25px;
+        font-size: 23px;
     }
     .questionContainer p.question {
-        font-size: 25px;
+        font-size: 23px;
         padding: 15px 10px;
     }
     .questionContainer p.question i {
@@ -2355,7 +2300,7 @@ background:#faf5f1;
         width: 25%;
     }
     .storyDetail .container .detail .story .book {
-        height: 94%;
+        height: 84%;
     }
     .storyDetail .container .detail .story .book .image {
         height: 300px;
@@ -2368,10 +2313,13 @@ background:#faf5f1;
     }
     .storyDetail .container .detail .bookdetails li {
         margin-top: 30px;
-        font-size: 18px;
+        font-size: 17px;
     }
     .storyDetail .container .detail .bookdetails li span {
-        font-size: 22px;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 11px 0px
     }
     .storyDetail .container .detail .bookdetails li:first-of-type {
         margin-top: 0px;
@@ -2637,67 +2585,37 @@ background:#faf5f1;
         background: repeating-linear-gradient(45deg, #dc864e, #faf5f1 94%);
         font-size: 20px;
     }
-
-          .rightProfileBox {
-       
- 
-        top:86px;
-  
+    .rightProfileBox {
+        top: 86px;
     }
-
-  
     .rightProfileBox ul {
-
         padding: 35px 10px;
     }
-    
     .rightProfileBox ul li.image {
-        width: 80%;
-       
+        width: 100%;
     }
-    
     .rightProfileBox ul li.image img {
         width: 70px;
         height: 70px;
- 
-
     }
-    
     .rightProfileBox ul li a {
-      
         font-size: 20px;
     }
-    
     .rightProfileBox ul li {
         margin-bottom: 4px;
         padding: 0px 10px;
     }
-    
     .rightProfileBox ul li.image p {
         font-size: 22px;
         margin: 15px;
-       
     }
-    
     .rightProfileBox ul li p {
         margin: 10px 0px;
         font-size: 22px;
     }
-    
     .rightProfileBox ul li.image p.adding {
         font-size: 30px;
-        padding: 1px 4px;
-        text-align: center;
-        width: 100%;
-        color: #faf5f1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        cursor: pointer;
-        z-index: 1;
     }
-
-   
     .navIcons img {
         width: 40px;
         height: 40px;
@@ -2706,66 +2624,55 @@ background:#faf5f1;
         margin-bottom: 0px;
         background: transparent;
     }
-    
     .navIcons a.userIcon {
         background-color: transparent;
-        padding:2.5px;
+        padding: 2.5px;
         width: 60px;
         height: 45px;
-        border:none;
+        border: none;
     }
-
-    ul.navLinks
-    {
-        width:35%
+    ul.navLinks {
+        width: 35%
     }
-
-       ul.servicesBox {
-   
+    ul.servicesBox {
         top: 77.1px;
-
     }
-
-       ul.navLinks > li.active a
-    {
-        color:#592a20;
-        font-weight:bold
+    ul.navLinks>li.active a {
+        color: #592a20;
     }
-    
-    ul.navLinks >li.active a
-    {
-        color:#592a20;
-        font-weight:bold
+    ul.navLinks>li.active a {
+        color: #592a20;
     }
-      ul.navLinks >li.active .servicesBox a
-    {
-        color:#faf5f1;
-        font-weight:bold
+    ul.navLinks>li.active .servicesBox a {
+        color: #faf5f1;
     }
-
-          ul.navLinks >li.active .servicesBox li.active 
-          {
-                      color:#592a20;
-background:#faf5f1;
-          }
-
-                    ul.navLinks >li.active .servicesBox li.active  a {
-                                              color:#592a20;
-
-                    }
-
-                        ul.navLinks li.services.active ul.servicesBox li:hover {
+    ul.navLinks>li.active .servicesBox li.active {
+        color: #592a20;
+        background: #faf5f1;
+    }
+    ul.navLinks>li.active .servicesBox li.active a {
+        color: #592a20;
+    }
+    ul.navLinks li.services.active ul.servicesBox li:hover {
         background: rgba(133, 131, 131, .4);
         color: #707070
     }
     ul.navLinks li.services ul.servicesBox li:hover a {
         color: #707070
     }
-         ul.navLinks .servicesBox li:hover
-                    {
-                                background: rgba(133, 131, 131, .4);
-
-                    }
+    ul.navLinks .servicesBox li:hover {
+        background: rgba(133, 131, 131, .4);
+    }
+    footer .links,
+    footer .contactus {
+        margin-top: -100px;
+    }
+    footer .links {
+        margin-top: -120px;
+    }
+    footer .socialLinks {
+        margin-top: 35px
+    }
 }
 
 @media(min-width:1200px) {
@@ -2775,10 +2682,8 @@ background:#faf5f1;
         padding: 15px 10px 15px 0;
         margin-left: 5%
     }
-
-    ul.navLinks .servicesBox
-    {
-        top:78.1888845px;
+    ul.navLinks .servicesBox {
+        top: 78.1888845px;
     }
     ul.navLinks li.services:hover .servicesBox {
         display: flex
@@ -2804,8 +2709,7 @@ background:#faf5f1;
     }
     footer .copyRight {
         width: 100%;
-        font-size: 25px;
-        padding-left: 30%
+        font-size: 23px;
     }
     .Sign .submit label {
         width: 26%;
@@ -3013,10 +2917,10 @@ background:#faf5f1;
     }
     .questionContainer p.Answer {
         line-height: 40px;
-        font-size: 27px;
+        font-size: 24px;
     }
     .questionContainer p.question {
-        font-size: 27px;
+        font-size: 24px;
         padding: 15px 10px;
     }
     .questionContainer p.question i {
@@ -3367,117 +3271,87 @@ background:#faf5f1;
         margin-bottom: 0px;
         background: transparent;
     }
-    
-
-      .rightProfileBox {
-    
-        top:88px;
-
+    .rightProfileBox {
+        top: 88px;
     }
-
-  
     .rightProfileBox ul {
-
         padding: 35px 10px;
     }
-    
     .rightProfileBox ul li.image {
-        width: 80%;
-       
+        width: 100%;
     }
-    
     .rightProfileBox ul li.image img {
         width: 70px;
         height: 70px;
- 
-
     }
-    
     .rightProfileBox ul li a {
-      
         font-size: 20px;
     }
-    
     .rightProfileBox ul li {
         margin-bottom: 4px;
         padding: 0px 10px;
     }
-    
     .rightProfileBox ul li.image p {
         font-size: 22px;
         margin: 15px;
-       
     }
-    
     .rightProfileBox ul li p {
         margin: 10px 0px;
         font-size: 22px;
     }
-    
     .rightProfileBox ul li.image p.adding {
         font-size: 30px;
         padding: 1px 4px;
-        text-align: center;
-        width: 100%;
-        color: #faf5f1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        cursor: pointer;
-        z-index: 1;
     }
-
-   
     .navIcons img {
         width: 45px;
         height: 45px;
-        border-radius: 50%;
-        margin: auto;
-        margin-bottom: 0px;
-        background: transparent;
     }
-    
     .navIcons a.userIcon {
-        background-color: transparent;
         padding: 0px;
+        background-color: transparent;
         width: 60px;
         height: 60px;
-        border:none;
+        border: none;
     }
-
-    ul.navLinks >li.active a
-    {
-        color:#592a20;
-        font-weight:bold
+    ul.navLinks>li.active a {
+        color: #592a20;
+        font-weight: bold
     }
-      ul.navLinks >li.active .servicesBox a
-    {
-        color:#faf5f1;
-        font-weight:bold
+    ul.navLinks>li.active .servicesBox a {
+        color: #faf5f1;
+        font-weight: bold
     }
-
-          ul.navLinks >li.active .servicesBox li.active 
-          {
-                      color:#592a20;
-background:#faf5f1;
-          }
-
-                    ul.navLinks >li.active .servicesBox li.active  a {
-                                              color:#592a20;
-
-                    }
-                    ul.navLinks .servicesBox li:hover
-                    {
-                                background: rgba(133, 131, 131, .4);
-
-                    }
-
-                        ul.navLinks li.services.active ul.servicesBox li:hover {
+    ul.navLinks>li.active .servicesBox li.active {
+        color: #592a20;
+        background: #faf5f1;
+    }
+    ul.navLinks>li.active .servicesBox li.active a {
+        color: #592a20;
+    }
+    ul.navLinks .servicesBox li:hover {
+        background: rgba(133, 131, 131, .4);
+    }
+    ul.navLinks li.services.active ul.servicesBox li:hover {
         background: rgba(133, 131, 131, .4);
         color: #707070
     }
     ul.navLinks li.services ul.servicesBox li:hover a {
         color: #707070
     }
+    footer .links,
+    footer .contactus {
+        margin-top: -100px;
+    }
+    footer .links {
+        margin-top: -120px;
+    }
+    footer .socialLinks {
+        margin-top: 20px
+    }
+}
 
+.container .books .book h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
