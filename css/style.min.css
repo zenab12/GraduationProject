@@ -2610,5 +2610,5 @@ a {
 
 .hvr-ripple-out:before,
 .hvr-ripple-in:before {
-    border-radius: 4px;
+    border-radius: 0px;
 }
