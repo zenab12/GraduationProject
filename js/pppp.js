@@ -151,14 +151,19 @@ $(document).ready(function() {
         if ($(window).width() < 768) {
             $($(row).children()).css('display', 'none');
             $($(row).children()[0]).css('display', 'flex');
+            $($(row).children()[0]).css(
+                'width', '220px');
+
+
+            $($(row).children()[0]).find($('.image')).css('height', '300px');
+            $($(row).children()[0]).find($('.overflow a')).css({ 'height': '50px', 'width': '50px', 'font-size': '26px' })
+
 
         } else {
 
-            $($(row).children()).css('display', 'inline-flex');
-
+            $($(row).children()[0]).css(
+                'display', 'flex');
         }
-
-
 
     }
 
