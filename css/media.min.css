@@ -877,7 +877,7 @@
     }
 }
 
-@media(min-width:500px) and (max-width:660px) {
+@media(min-width:460px) and (max-width:660px) {
     footer h2 {
         font-size: 21px
     }
@@ -919,7 +919,14 @@
         width: 90%;
     }
     section.recentlyStories .container .controls {
-        padding: 0px 8px;
+        padding: 0px 15px;
+    }
+    section.recentlyStories .container .controls i {
+        font-size: 23px;
+        padding: 5px;
+        width: 40px;
+        display: inline-block;
+        border-width: 3.5px;
     }
     section.recentlyStories .container .books .book .image {
         height: 160px
@@ -1011,7 +1018,14 @@
         width: 58%
     }
     section.recentlyStories .container .controls {
-        padding: 0px 8px;
+        padding: 0px 15px;
+    }
+    section.recentlyStories .container .controls i {
+        font-size: 23px;
+        padding: 5px;
+        width: 40px;
+        display: inline-block;
+        border-width: 3.5px;
     }
     section.recentlyStories .container .books .book .image {
         height: 160px
@@ -1086,6 +1100,32 @@
     }
 }
 
+@media(min-width:360px) and (max-width:460px) {
+    section.recentlyStories .container .controls {
+        padding: 0px 15px;
+    }
+    section.recentlyStories .container .controls i {
+        font-size: 23px;
+        padding: 5px;
+        width: 38px;
+        display: inline-block;
+        border-width: 3.5px;
+    }
+}
+
+@media(max-width:360px) {
+    section.recentlyStories .container .controls {
+        padding: 0px 6px;
+    }
+    section.recentlyStories .container .controls i {
+        font-size: 23px;
+        padding: 5px;
+        width: 35px;
+        display: inline-block;
+        border-width: 3.5px;
+    }
+}
+
 @media (max-width:370px) {
     section.aboutSlider .container p {
         font-size: 17px;
@@ -1113,16 +1153,6 @@
         order: 4;
         font-size: 14px;
         padding-left: 0
-    }
-    section.recentlyStories .container .controls {
-        padding: 0px 2px;
-    }
-    section.recentlyStories .container .controls i {
-        font-size: 10px;
-        padding: 3px;
-        border-width: 2px;
-        border-radius: 5px;
-        ;
     }
     section.recentlyStories .container {
         width: 100%
@@ -2827,7 +2857,6 @@
         font-size: 40px;
         ;
     }
-    .bookShelf .container .btn {}
     .bookShelf .container .books .book {
         display: flex;
         width: 245px

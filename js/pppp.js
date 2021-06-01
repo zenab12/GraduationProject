@@ -98,7 +98,6 @@ $(document).ready(function() {
     });
 
 
-
     $('.recentlyStories .fa-chevron-right').on('click', function() {
 
 
@@ -145,27 +144,53 @@ $(document).ready(function() {
 
         let li = $(`<li data-row=${index}></li>`);
         $('.indicators').append(li);
-        $('.indicators li').css('width', `${($('.indicators').width()) / (($('.books').children().length))}`)
+
+
+
+
+
+        //change books with scroll 
+
+        $(window).scroll(function() {
+
+            console.log($('.recentlyStories').width());
+
+
+            if ($('.recentlyStories').width() < 768) {
+                $($(row).children()).css('display', 'none');
+                $($(row).children()[0]).css('display', 'flex');
+                $($(row).children()).css(
+                    'width', '220px');
+
+
+                $($(row).children()).find($('.image')).css('height', '300px');
+                $($(row).children()).find($('.overflow a')).css({ 'height': '50px', 'width': '50px', 'font-size': '26px' })
+
+                $($(row).children()).find($('.controls')).css('padding', '0px 9px');
+
+                $($(row).children()).find($('container .controls i')).css('width', '40px');
+
+
+
+            } else {
+
+                $($(row).children()).css(
+                    'display', 'block');
+
+
+            }
+
+            $('.indicators li').css('width', `${($('.indicators').width()) / (($('.books').children().length))}`)
+
+
+
+        })
         $('.indicators li:first-of-type').addClass('active');
 
-        if ($(window).width() < 768) {
-            $($(row).children()).css('display', 'none');
-            $($(row).children()[0]).css('display', 'flex');
-            $($(row).children()[0]).css(
-                'width', '220px');
-
-
-            $($(row).children()[0]).find($('.image')).css('height', '300px');
-            $($(row).children()[0]).find($('.overflow a')).css({ 'height': '50px', 'width': '50px', 'font-size': '26px' })
-
-
-        } else {
-
-            $($(row).children()[0]).css(
-                'display', 'flex');
-        }
 
     }
+
+
 
     $('.indicators li').on('click', function() {
 
@@ -392,6 +417,48 @@ $(document).ready(function() {
         $(book).addClass('hvr-curl-top-left');
 
     }
+
+    //loading screen 
+    /*
+        let msg = ["Welcome To Hadoota World ", "We Wish for You Amazing Journey With out Books", "Please Waiting Until Loading"];
+        let ele = $("#msg");
+        let i = 0;
+        console.log($(msg)[0]);
+        $(ele).text($(msg[0]));
+        let interval = setInterval(function() {
+            $(ele).text($(msg[++i % msg.length]))
+        }, 2000);
+    */
+
+
+    $(window).on('load', function() {
+
+        let msg = ["Welcome To Hadoota World", "We Wish for You Amazing Journey With Our Books", "Please Waiting Until Loading ...."];
+        let ele = document.getElementById("msg");
+        let i = 0;
+        ele.innerText = msg[0];
+        let interval = setInterval(function() {
+            ele.innerText = msg[++i % msg.length];
+        }, 2500);
+
+
+
+        $('body').css({ "overflow": "auto" });
+
+
+        $('#loader').find($('.loadingBook')).fadeOut(1000, function() {
+
+            $(this).parent().fadeOut(1000, function() {
+
+
+                $(this).remove();
+
+            });
+
+        });
+
+
+    });
 
 
 
