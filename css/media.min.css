@@ -822,12 +822,13 @@
         font-size: 30px;
     }
     .navIcons img {
-        width: 44px;
-        height: 44px;
+        width: 46px;
+        height: 45px;
         border-radius: 50%;
         margin: auto;
         margin-bottom: 0px;
         background: transparent;
+        border: 2px solid #faf5f1
     }
     .navIcons a.userIcon {
         background-color: transparent;

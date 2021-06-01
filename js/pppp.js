@@ -225,13 +225,14 @@ $(document).ready(function() {
         let profilePhoto = profilePhotoList[profilePhotoList.length - 1];
         console.log(profilePhotoList);
 
-        $(this).parent().parent().find('img').attr('src', `./images/${profilePhoto}`)
+        $(this).parent().parent().find('img').attr('src', `${URL.createObjectURL(event.target.files[0])}`);
 
         $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${URL.createObjectURL(event.target.files[0])}`);
 
         if ($('body').width() <= 768) {
 
-            $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${     URL.createObjectURL(event.target.files[0])}`);
+
+            $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${ URL.createObjectURL(event.target.files[0])}`);
 
         }
     });
