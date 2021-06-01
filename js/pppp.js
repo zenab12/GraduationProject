@@ -231,9 +231,9 @@ $(document).ready(function() {
 
         if ($('body').width() <= 768) {
 
-            $('.rightProfileBox .upload input').parent().parent().find('img').attr('src', `${URL.createObjectURL(event.target.files[0])}`);
+            $(this).parent().parent().find('img').attr('src', `${URL.createObjectURL(event.target.files[0])}`);
 
-            $('.rightProfileBox .upload input').parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${ URL.createObjectURL(event.target.files[0])}`);
+            $(this).parent().parent().parents('.rightProfileBox').siblings('nav').find('.navIcons img').attr('src', `${ URL.createObjectURL(event.target.files[0])}`);
 
         }
     });
