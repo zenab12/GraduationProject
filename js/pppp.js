@@ -78,6 +78,8 @@ $(document).ready(function() {
     console.log(rows);
 
 
+
+
     $('.recentlyStories .fa-chevron-left').on('click', function() {
 
         if ($('.books .row').eq(0).hasClass('active') === true) {
@@ -87,11 +89,11 @@ $(document).ready(function() {
             $('.indicators li').eq(`${rows}`).addClass('active').siblings().removeClass('active');
 
 
+
+
         } else {
             $('.books .row.active').prev().addClass('active').siblings().removeClass('active');
             $('.indicators li.active').prev().addClass('active').siblings().removeClass('active');
-
-
         };
 
 
@@ -120,17 +122,6 @@ $(document).ready(function() {
     });
 
 
-    function flip() {
-        setTimeout(() => {
-            $('.recentlyStories .fa-chevron-right').click();
-        }, 3000)
-
-    }
-
-    flip();
-
-
-
 
     for (let index = 0; index < $('.books').children().length; index++) {
 
@@ -138,15 +129,15 @@ $(document).ready(function() {
         let row = $('.books').children()[index];
         $($('.books').children()[index]).addClass(`${index}`);
 
+
+
+
         console.log(row);
 
         // create li based on row numbers 
 
         let li = $(`<li data-row=${index}></li>`);
         $('.indicators').append(li);
-
-
-
 
 
         //change books with scroll 
@@ -433,33 +424,84 @@ $(document).ready(function() {
 
     $(window).on('load', function() {
 
-        let msg = ["Welcome To Hadoota World", "We Wish for You Amazing Journey With Our Books", "Please Waiting Until Loading ...."];
+        let msg = [" 🕮 Welcome To Hadoota World ..", " 🕮 We Wish for You Amazing Journey With Our Books ..", "Please Waiting Until Loading ...."];
         let ele = document.getElementById("msg");
         let i = 0;
         ele.innerText = msg[0];
         let interval = setInterval(function() {
             ele.innerText = msg[++i % msg.length];
-        }, 2500);
+        }, 1500);
 
 
 
-        $('body').css({ "overflow": "auto" });
 
 
-        $('#loader').find($('.loadingBook')).fadeOut(1000, function() {
+        $('#loader').find($('.loadingBook')).fadeOut(1500, function() {
 
-            $(this).parent().fadeOut(1000, function() {
 
+
+            $(this).parent().fadeOut(1500, function() {
+
+                $('body').css({ "overflow": "auto" });
 
                 $(this).remove();
 
             });
 
         });
-
-
     });
+
+    //wow.js
+
+    $('.ourServices').attr('data-wow-offset', `${(($('.ourServices').offset().top ) )}`);
+    $('.recentlyStories').attr('data-wow-offset', `${(($('.recentlyStories').offset().top ) - 30)}`);
+
+
+
+    $('.whyUs').attr('data-wow-offset', `${(($('.whyUs').offset().top ) - 30)}`);
 
 
 
 });
+
+/*
+    var slideCount = $('.mostRecently').length;
+    var slideWidth = $('.mostRecently .row').width();
+    var slideHeight = $('.mostRecently .row').height();
+    var sliderUlWidth = parseInt(slideCount) * parseInt(slideWidth);
+
+    console.log(sliderUlWidth);
+
+    $('.mostRecently').css({ width: slideWidth, height: slideHeight });
+
+    $('.mostRecently .row').css({ width: sliderUlWidth, marginLeft: -slideWidth });
+
+    $('.mostRecently .row:last-child').prependTo('.mostRecently');
+
+    function moveLeft() {
+        $('.mostRecently').animate({
+            left: +slideWidth
+        }, 200, function() {
+            $('.mostRecently .row:last-child').prependTo('.mostRecently');
+            $('.mostRecently').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('.mostRecently').animate({
+            left: -slideWidth
+        }, 200, function() {
+            $('.mostRecently .row:first-child').appendTo('.mostRecently');
+            $('.mostRecently').css('left', '');
+        });
+    };
+
+    $('.recentlyStories .fa-chevron-left').on('click', function() {
+        moveLeft();
+    });
+
+    $('.recentlyStories .fa-chevron-left').on('click', function() {
+        moveRight();
+    });
+
+    */

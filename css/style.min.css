@@ -1076,6 +1076,11 @@ section.recentlyStories {
     border: 5px solid #592A20;
 }
 
+.container .controls i :hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
 section.mainSlider {
     height: 600px;
     background: url(../images/slider.png)no-repeat fixed 100% 100%;
@@ -1108,7 +1113,7 @@ section.ourServices .container h3 {
 }
 
 section.mainSlider .container h1 {
-    margin: 70px 0px 10px;
+    margin: 50px 0px 10px;
 }
 
 section.ourServices .container h2,
@@ -2672,6 +2677,7 @@ a {
     transform: rotateZ(90deg);
     -webkit-animation: left 6.8s ease infinite;
     animation: left 6.8s ease infinite;
+    box-shadow: 1px 1px 1px #592a20
 }
 
 .loadingBook .inner .right {
@@ -2682,6 +2688,7 @@ a {
     transform: rotateZ(-90deg);
     -webkit-animation: right 6.8s ease infinite;
     animation: right 6.8s ease infinite;
+    box-shadow: 1px 1px 1px #592a20
 }
 
 .loadingBook .inner .middle {
@@ -2692,6 +2699,7 @@ a {
     border-radius: 0 0 9px 9px;
     -webkit-transform: translateY(2px);
     transform: translateY(2px);
+    box-shadow: 1px 1px 1px #592a20
 }
 
 .loadingBook ul {
@@ -2715,12 +2723,13 @@ a {
     background: #592a20;
     -webkit-transform: rotateZ(0deg) translateX(-18px);
     transform: rotateZ(0deg) translateX(-18px);
-    -webkit-animation-duration: 6.8s;
-    animation-duration: 6.8s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    box-shadow: 1px 1px 1px #592a20
 }
 
 .loadingBook ul li:nth-child(0) {
@@ -2824,9 +2833,10 @@ a {
     position: absolute;
     top: calc(53% + 32px);
     width: 100%;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 21px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .message::after {
@@ -3635,8 +3645,8 @@ html {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    background: repeating-linear-gradient(-45deg, #faf5f1, #dc864e 85%, #faf5f1 87%, #dc864e 80%);
-    border-left: 20px solid #592a20;
+    background: repeating-linear-gradient(-45deg, #faf5f1 10px, #dc864e 90%);
+    border-left: 12px solid #592a20;
     top: 0;
     z-index: 999999;
     left: 0;
@@ -3645,4 +3655,43 @@ html {
 body {
     overflow: hidden;
     position: relative
+}
+
+.recentlyStories {
+    overflow-x: hidden
+}
+
+.recentlyStories .books {
+    overflow-x: hidden
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px #592a20;
+    border-radius: 0px;
+    background: #592a20;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #faf5f1;
+    border-radius: 0px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #dc864e;
 }
