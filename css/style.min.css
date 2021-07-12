@@ -258,7 +258,7 @@ p {
     padding: 10px 0;
     font-weight: bolder;
     display: inline-flex;
-    margin-top: 10px
+    margin-top: 12px
 }
 
 .logo a img {
@@ -1016,8 +1016,6 @@ section.recentlyStories {
     font-size: 30px;
     color: #DC864E;
     position: absolute;
-    top: 10px;
-    left: 10px;
     cursor: pointer;
 }
 
@@ -1491,17 +1489,19 @@ section.recentlyStories .container .row.active {
 }
 
 .questionContainer p.question span {
-    width: 95%;
+    width: 90%;
     display: inline-flex;
+    line-height: 24px
 }
 
 .questionContainer p.question i {
-    width: 5%;
+    width: 6%;
     text-align: center;
     display: inline-flex;
     font-size: 30px;
     color: #9499A6;
     cursor: pointer;
+    margin-top: -10px;
 }
 
 .questionContainer p.question i.fa-sort-up {

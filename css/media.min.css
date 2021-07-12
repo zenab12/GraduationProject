@@ -13,7 +13,8 @@
         padding-left: 10px
     }
     .logo a {
-        font-size: 30px
+        font-size: 30px;
+        margin-top: 15px;
     }
     .logo a span {
         font-size: 27px;
@@ -1098,6 +1099,9 @@
         margin-bottom: 10px;
         line-height: 28px;
     }
+    .logo a {
+        margin-top: 10px;
+    }
 }
 
 @media(min-width:360px) and (max-width:460px) {
@@ -1219,7 +1223,8 @@
         padding-left: 10px
     }
     .logo a {
-        font-size: 35px
+        font-size: 35px;
+        margin-top: 18px;
     }
     .logo a span {
         font-size: 31px;
@@ -1592,7 +1597,7 @@
         width: 100%;
     }
     .questionContainer p.Answer {
-        line-height: 35px;
+        line-height: 38px;
         font-size: 18px;
     }
     .questionContainer p.question {
@@ -1766,8 +1771,8 @@
         margin-top: 1%;
     }
     section.aboutSlider .container p {
-        font-size: 20px;
-        width: 97%;
+        font-size: 18px;
+        width: 95%;
         text-align: center;
         margin-bottom: 3px
     }

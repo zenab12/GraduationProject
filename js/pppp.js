@@ -64,11 +64,13 @@ $(document).ready(function() {
 
             window.location.hash == "#signup";
             $("#signup").removeClass('hiden').siblings().addClass('hiden');
-        } else {
-            window.location.hash = "#signin";
-            $("#signin").removeClass('hiden').siblings().addClass('hiden');
-
         }
+
+        /*else {
+                   window.location.hash = "#signin";
+                   $("#signin").removeClass('hiden').siblings().addClass('hiden');
+
+               }*/
 
     });
     // create slider of books on mobile screen 
@@ -121,6 +123,37 @@ $(document).ready(function() {
 
     });
 
+    //create fav button 
+    var favButton = $("<button><i class='far fa-heart'></i></button>");
+    // var favIcon = $('<i></i>');
+    //$(favIcon).addClass('far fa-heart');
+    $(favButton).css({
+        'display': 'inline-flex',
+        'font-size': '30px',
+        'color': '#DC864E',
+        'position': 'absolute',
+        'top': '10px',
+        'left': '10px',
+        'cursor': 'pointer',
+        'width': '30px',
+        'height': '30px',
+        'background': 'transparent',
+        'outline': 'none',
+        'border': 'none'
+    })
+    $('.books').find('.book .image .overflow').append(favButton);
+    console.log($(favButton));
+
+
+
+    for (let i = 0; i < ($('.books').find('.book .image .overflow').length); i++) {
+
+        $('.book').children('.image').children('.overflow').children('i').remove();
+        $('.books .book').find('.overflow button i').css('display', 'block');
+
+
+    }
+
 
 
     for (let index = 0; index < $('.books').children().length; index++) {
@@ -128,8 +161,6 @@ $(document).ready(function() {
 
         let row = $('.books').children()[index];
         $($('.books').children()[index]).addClass(`${index}`);
-
-
 
 
         console.log(row);
@@ -405,7 +436,7 @@ $(document).ready(function() {
 
     for (let b = 0; b < $('.mostRecently').children().children().length; b++) {
         let book = $('.mostRecently').children().find($('.overflow'))[b];
-        $(book).addClass('hvr-curl-top-left');
+        $(book).addClass('hvr-curl-top-right');
 
     }
 
@@ -430,14 +461,13 @@ $(document).ready(function() {
         ele.innerText = msg[0];
         let interval = setInterval(function() {
             ele.innerText = msg[++i % msg.length];
-        }, 1500);
+        }, 1300);
 
 
 
 
 
         $('#loader').find($('.loadingBook')).fadeOut(1500, function() {
-
 
 
             $(this).parent().fadeOut(1500, function() {
@@ -452,15 +482,11 @@ $(document).ready(function() {
     });
 
     //wow.js
+    $('.ourServices').find('.container').find('.translation').attr('data-wow-offset', `${(($('.ourServices').offset().top - 300))}`);
+    $('.ourServices').find('.container').find('.bookshelf').attr('data-wow-offset', `${(($('.ourServices').offset().top -300))}`);
 
-    $('.ourServices').attr('data-wow-offset', `${(($('.ourServices').offset().top ) )}`);
-    $('.recentlyStories').attr('data-wow-offset', `${(($('.recentlyStories').offset().top ) - 30)}`);
-
-
-
-    $('.whyUs').attr('data-wow-offset', `${(($('.whyUs').offset().top ) - 30)}`);
-
-
+    $('.recentlyStories').attr('data-wow-offset', `${(($('.recentlyStories').offset().top - 10))}`);
+    $('.whyus').attr('data-wow-offset', `${(($('.whyUs').offset().top -30))}`);
 
 });
 
@@ -505,3 +531,8 @@ $(document).ready(function() {
     });
 
     */
+
+
+$('.ourServices').find('.container').css('overflow', 'hidden');
+$('.whyus').find('.container').css('overflow', 'hidden');
+$('.feedback').find('.container').css('overflow', 'hidden');
