@@ -91,12 +91,12 @@ $(document).ready(function() {
             $('.indicators li').eq(`${rows}`).addClass('active').siblings().removeClass('active');
 
 
-
-
         } else {
             $('.books .row.active').prev().addClass('active').siblings().removeClass('active');
             $('.indicators li.active').prev().addClass('active').siblings().removeClass('active');
+
         };
+        $(this).parent().siblings().find('.row.active').removeClass(['wow', 'animate__animated', 'animate__slideInLeft', 'animate__slideInRight']).addClass(['wow', 'animate__animated', 'animate__slideInRight']).siblings().removeClass('animate__slideInLeft');
 
 
     });
@@ -111,7 +111,6 @@ $(document).ready(function() {
             $('.books .row').eq(0).addClass('active').siblings().removeClass('active');
             $('.indicators li').eq(0).addClass('active').siblings().removeClass('active');
 
-
         } else {
             $('.books .row.active').next().addClass('active').siblings().removeClass('active');
             $('.indicators li.active').next().addClass('active').siblings().removeClass('active');
@@ -119,6 +118,8 @@ $(document).ready(function() {
 
 
         };
+
+        $(this).parent().siblings().find('.row.active').removeClass(['wow', 'animate__animated', 'animate__slideInLeft', 'animate__slideInRight']).addClass(['wow', 'animate__animated', 'animate__slideInLeft']).siblings().removeClass('animate__slideInRight')
 
 
     });
@@ -140,7 +141,8 @@ $(document).ready(function() {
         'background': 'transparent',
         'outline': 'none',
         'border': 'none'
-    })
+    });
+
     $('.books').find('.book .image .overflow').append(favButton);
     console.log($(favButton));
 
@@ -220,6 +222,24 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
         $("." + $(this).data('row')).addClass('active').siblings().removeClass('active');
 
+        if ($(this).data('row') == 2) {
+
+            $("." + $(this).data('row')).removeClass(['wow', 'animate__animated', 'animate__slideInRight', 'animate__slideInLeft']).addClass(['wow', 'animate__animated', 'animate__slideInLeft']).siblings().removeClass(['animate__slideInRight']);
+
+
+        } else if ($(this).data('row') == 0) {
+            $("." + $(this).data('row')).removeClass(['wow', 'animate__animated', 'animate__slideInRight', 'animate__slideInLeft']).addClass(['wow', 'animate__animated', 'animate__slideInRight']).siblings().removeClass(['animate__slideInLeft']);
+
+        }
+        /* else if (($(this).data('row') == 1)) {
+
+                $("." + $(this).data('row')).removeClass(['wow', 'animate__animated', 'animate__slideInRight', 'animate__slideInLeft']).addClass(['wow', 'animate__animated', 'animate__slideInLeft']).siblings().removeClass(['wow', 'animate__animated', 'animate__slideInRight']);
+
+            } else if (($(this).next().data('row') == 2)) {
+                $("." + $(this).data('row')).removeClass(['wow', 'animate__animated', 'animate__slideInLeft', 'animate__slideInRight']).addClass(['wow', 'animate__animated', 'animate__slideInRight']).siblings().removeClass(['wow', 'animate__animated', 'animate__slideInLeft']);
+
+            }
+            */
 
 
     });
@@ -481,57 +501,39 @@ $(document).ready(function() {
         });
     });
 
-    //wow.js
+
+
+    // i want to edit animation of recently stories and animation of the loader for msgbox 
+
+    var translateButton = $('form.translateButton .submit')[0];
+    console.log(translateButton);
+
+    $(translateButton).click(function(e) {
+        e.preventDefault();
+
+        $(this).parent().parent().parent().siblings('.pageloader').fadeIn(2000, function() {
+
+            $(this).fadeOut(2000);
+        });
+        $(this).css('cursor', 'no-drop');
+        $(this).attr('disabled', true);
+
+    });
+
+
+
+
+    //wow.js'
+
     $('.ourServices').find('.container').find('.translation').attr('data-wow-offset', `${(($('.ourServices').offset().top - 300))}`);
     $('.ourServices').find('.container').find('.bookshelf').attr('data-wow-offset', `${(($('.ourServices').offset().top -300))}`);
-
     $('.recentlyStories').attr('data-wow-offset', `${(($('.recentlyStories').offset().top - 10))}`);
     $('.whyus').attr('data-wow-offset', `${(($('.whyUs').offset().top -30))}`);
 
+
+
+
 });
-
-/*
-    var slideCount = $('.mostRecently').length;
-    var slideWidth = $('.mostRecently .row').width();
-    var slideHeight = $('.mostRecently .row').height();
-    var sliderUlWidth = parseInt(slideCount) * parseInt(slideWidth);
-
-    console.log(sliderUlWidth);
-
-    $('.mostRecently').css({ width: slideWidth, height: slideHeight });
-
-    $('.mostRecently .row').css({ width: sliderUlWidth, marginLeft: -slideWidth });
-
-    $('.mostRecently .row:last-child').prependTo('.mostRecently');
-
-    function moveLeft() {
-        $('.mostRecently').animate({
-            left: +slideWidth
-        }, 200, function() {
-            $('.mostRecently .row:last-child').prependTo('.mostRecently');
-            $('.mostRecently').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('.mostRecently').animate({
-            left: -slideWidth
-        }, 200, function() {
-            $('.mostRecently .row:first-child').appendTo('.mostRecently');
-            $('.mostRecently').css('left', '');
-        });
-    };
-
-    $('.recentlyStories .fa-chevron-left').on('click', function() {
-        moveLeft();
-    });
-
-    $('.recentlyStories .fa-chevron-left').on('click', function() {
-        moveRight();
-    });
-
-    */
-
 
 $('.ourServices').find('.container').css('overflow', 'hidden');
 $('.whyus').find('.container').css('overflow', 'hidden');
