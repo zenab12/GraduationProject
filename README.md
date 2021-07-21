@@ -1,5 +1,5 @@
 # GraduationProject
-## hello there this project about hadoota online library made with html , css  and jq and this the link 
+## hello there this project about hadoota online library made with html , css  and jq and this is the link 
 
 ### from netify platform 
 
